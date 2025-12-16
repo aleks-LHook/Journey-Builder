@@ -1,0 +1,777 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LeadsHook User Flow | Dev Spec</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        navy: {
+                            50: '#e8eaf0',
+                            100: '#d1d5e1',
+                            200: '#a3abc3',
+                            300: '#7581a5',
+                            400: '#475787',
+                            500: '#1a2d69',
+                            600: '#162557',
+                            700: '#121C35',
+                            800: '#0e1629',
+                            900: '#0a101d',
+                        },
+                        accent: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .flow-card {
+            transition: all 0.2s ease;
+        }
+        .flow-card:hover {
+            box-shadow: 0 4px 20px rgba(18,28,53,0.15);
+        }
+        .mockup {
+            font-size: 11px;
+        }
+        .code {
+            font-family: 'SF Mono', 'Monaco', monospace;
+            font-size: 10px;
+            background: #0e1629;
+            color: #7581a5;
+        }
+    </style>
+</head>
+<body class="bg-navy-50 text-navy-700 p-6">
+
+    <!-- Header -->
+    <div class="max-w-6xl mx-auto mb-8">
+        <div class="flex items-center gap-3 mb-2">
+            <span class="bg-navy-700 text-white text-xs font-bold px-2 py-1 rounded">DEV SPEC</span>
+            <span class="bg-navy-100 text-navy-500 text-xs font-medium px-2 py-1 rounded">Pending Confirmation</span>
+        </div>
+        <h1 class="text-2xl font-bold text-navy-800">LeadsHook User Flow</h1>
+        <p class="text-navy-400 text-sm mt-1">Homepage → Niche Page → Signup → Onboarding → Vault Docs → Build DT</p>
+    </div>
+
+    <div class="max-w-6xl mx-auto space-y-6">
+
+        <!-- STEP 0: Homepage -->
+        <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden">
+            <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 0</span>
+                    <span class="font-medium text-lg">Homepage</span>
+                </div>
+                <span class="text-xs text-navy-300">leadshook.com</span>
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-navy-800 mb-3">Hero Section</h3>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Headline</div>
+                                <div class="font-medium text-navy-700">"Build Customer Journeys"</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Subheadline</div>
+                                <div class="text-navy-500">"Chat with AI to generate leads"</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Prompt Box</div>
+                                <div class="bg-navy-50 border border-navy-100 rounded-lg p-3">
+                                    <div class="text-navy-300 italic">"Build a journey in the solar / life insurance / debt relief niche"</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">User Action</div>
+                                <div class="text-navy-500">User types a niche and hits enter</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="bg-navy-800 rounded-lg overflow-hidden">
+                            <div class="bg-navy-700 px-3 py-2 flex items-center gap-2">
+                                <div class="w-2.5 h-2.5 rounded-full bg-navy-500"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-navy-500"></div>
+                                <div class="w-2.5 h-2.5 rounded-full bg-navy-500"></div>
+                                <span class="text-xs text-navy-400 ml-2">leadshook.com</span>
+                            </div>
+                            <div class="p-6 text-center">
+                                <div class="text-white text-lg font-bold mb-1">Build Customer Journeys</div>
+                                <div class="text-navy-300 text-xs mb-4">Chat with AI to generate leads</div>
+                                <div class="bg-white rounded-lg p-3 flex items-center gap-2 max-w-xs mx-auto">
+                                    <span class="text-navy-300 text-xs flex-1 text-left">Build a journey in the solar...</span>
+                                    <span class="bg-navy-700 text-white text-xs px-2 py-1 rounded">→</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-navy-100">
+                    <div class="flex items-center gap-2 text-sm">
+                        <span class="text-navy-400">Output:</span>
+                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Redirects to /niche/[niche-slug]</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="flex justify-center">
+            <div class="text-navy-200 text-2xl">↓</div>
+        </div>
+
+        <!-- STEP 1: Niche Page -->
+        <div class="flex gap-4">
+            <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden flex-1">
+                <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 1</span>
+                        <span class="font-medium text-lg">Niche Page</span>
+                    </div>
+                    <span class="text-xs text-navy-300">leadshook.com/niche/[slug]</span>
+                </div>
+                <div class="p-6">
+                    <!-- Two scenarios -->
+                    <div class="grid md:grid-cols-2 gap-6 mb-6">
+                        <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="bg-navy-700 text-white text-xs px-2 py-0.5 rounded">A</span>
+                                <span class="text-navy-700 font-medium text-sm">Pre-generated Page Exists</span>
+                            </div>
+                            <ul class="text-sm text-navy-500 space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-navy-300">✓</span>
+                                    <span>Instant load (no AI wait)</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-navy-300">✓</span>
+                                    <span>SEO indexed & rankable</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-navy-300">✓</span>
+                                    <span>No API cost per visit</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+                            <div class="flex items-center gap-2 mb-3">
+                                <span class="bg-navy-300 text-white text-xs px-2 py-0.5 rounded">B</span>
+                                <span class="text-navy-700 font-medium text-sm">Generated On Demand</span>
+                            </div>
+                            <ul class="text-sm text-navy-500 space-y-2">
+                                <li class="flex items-start gap-2">
+                                    <span class="text-navy-300">⏳</span>
+                                    <span>Loading state while AI generates</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-navy-300">💰</span>
+                                    <span>API cost per generation</span>
+                                </li>
+                                <li class="flex items-start gap-2">
+                                    <span class="text-navy-300">📝</span>
+                                    <span>Option to cache after first gen?</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- Pre-generated pages list -->
+                    <div class="bg-navy-50 rounded-xl p-4 mb-6">
+                        <div class="text-xs text-navy-400 uppercase tracking-wider mb-3">Pre-Generated Niche Pages</div>
+                        <div class="grid grid-cols-2 md:grid-cols-4 gap-2">
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Solar</div>
+                                <div class="text-navy-300">/niche/solar</div>
+                            </div>
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Life Insurance</div>
+                                <div class="text-navy-300">/niche/life-insurance</div>
+                            </div>
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Debt Relief</div>
+                                <div class="text-navy-300">/niche/debt-relief</div>
+                            </div>
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Veteran Advocacy</div>
+                                <div class="text-navy-300">/niche/veteran-advocacy</div>
+                            </div>
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Medicare</div>
+                                <div class="text-navy-300">/niche/medicare</div>
+                            </div>
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Home Services</div>
+                                <div class="text-navy-300">/niche/home-services</div>
+                            </div>
+                            <div class="bg-white border border-navy-100 rounded-lg p-2 text-xs">
+                                <div class="font-medium text-navy-700">Legal (PI)</div>
+                                <div class="text-navy-300">/niche/personal-injury</div>
+                            </div>
+                            <div class="bg-white border border-dashed border-navy-200 rounded-lg p-2 text-xs text-navy-300">
+                                <div class="font-medium">+ More niches</div>
+                                <div>To be added</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Page content -->
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold text-navy-800 mb-3">Page Content</h3>
+                            <ul class="text-sm text-navy-500 space-y-1">
+                                <li>• Intro to the niche</li>
+                                <li>• How LeadsHook works for this market</li>
+                                <li>• Key challenges in this niche</li>
+                                <li>• <strong>Journey example for primary segment</strong></li>
+                            </ul>
+                            <div class="mt-4 text-sm">
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">CTA</div>
+                                <div class="text-navy-500">"Sign up to build your own journey"</div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="bg-navy-800 rounded-lg overflow-hidden">
+                                <div class="bg-navy-700 px-3 py-2 flex items-center gap-2">
+                                    <div class="w-2.5 h-2.5 rounded-full bg-navy-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-navy-500"></div>
+                                    <div class="w-2.5 h-2.5 rounded-full bg-navy-500"></div>
+                                    <span class="text-xs text-navy-400 ml-2">/niche/veteran-advocacy</span>
+                                </div>
+                                <div class="p-4 mockup">
+                                    <div class="text-white font-bold mb-1">Veteran Advocacy</div>
+                                    <div class="text-navy-300 text-xs mb-3">Build lead gen funnels for DVA claims</div>
+                                    <div class="bg-navy-700 rounded p-2 mb-3">
+                                        <div class="text-navy-400 text-xs">How LeadsHook helps...</div>
+                                    </div>
+                                    <div class="bg-navy-700 rounded p-2 mb-3 border border-navy-600">
+                                        <div class="text-navy-200 text-xs font-medium mb-1">📍 Journey Example</div>
+                                        <div class="text-navy-400 text-xs">Meet Steve, rejected twice...</div>
+                                    </div>
+                                    <div class="bg-white text-navy-700 text-xs text-center py-1.5 rounded font-medium">
+                                        Sign Up to Build This →
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="mt-4 pt-4 border-t border-navy-100">
+                        <div class="flex items-center gap-2 text-sm">
+                            <span class="text-navy-400">Output:</span>
+                            <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">User signs up</span>
+                            <span class="text-navy-300">→</span>
+                            <span class="bg-navy-50 text-navy-500 px-2 py-0.5 rounded text-xs">Niche passed to onboarding</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Output Sidebar -->
+            <div class="w-48 flex-shrink-0">
+                <div class="bg-navy-700 rounded-xl p-4 sticky top-6">
+                    <div class="text-xs text-navy-300 uppercase tracking-wider mb-3">Example Output</div>
+                    <a href="Military_Claims_Landing_Page_Tailwind.html" target="_blank" class="block bg-navy-600 hover:bg-navy-500 rounded-lg p-3 transition-colors">
+                        <div class="text-white text-sm font-medium mb-1">Military Claims</div>
+                        <div class="text-navy-300 text-xs">Landing Page</div>
+                        <div class="mt-2 text-navy-200 text-xs flex items-center gap-1">
+                            <span>View →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="flex justify-center">
+            <div class="text-navy-200 text-2xl">↓</div>
+        </div>
+
+        <!-- STEP 2: Onboarding -->
+        <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden">
+            <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 2</span>
+                    <span class="font-medium text-lg">Onboarding Flow</span>
+                </div>
+                <span class="text-xs text-navy-300">Post-signup — Creates Customer Magnet</span>
+            </div>
+            <div class="p-6">
+                <div class="mb-6">
+                    <h3 class="font-bold text-navy-800 mb-2">One Question at a Time</h3>
+                    <p class="text-sm text-navy-500">Each field is a full-screen step with an example. Reduces cognitive load, increases completion.</p>
+                </div>
+
+                <!-- Onboarding Steps -->
+                <div class="space-y-4">
+
+                    <!-- Step 1: Name -->
+                    <div class="bg-navy-800 rounded-xl overflow-hidden">
+                        <div class="bg-navy-700 px-4 py-2 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-navy-500 text-white text-xs px-2 py-0.5 rounded">1 of 6</span>
+                                <span class="text-navy-300 text-xs">Vault Name</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="text-white text-xl font-bold mb-2">What should we call this vault?</div>
+                            <div class="text-navy-300 text-sm mb-6">Pick a name that helps you identify this project</div>
+                            <div class="max-w-md mx-auto">
+                                <input type="text" placeholder="e.g., DVA Claims Australia" class="w-full bg-navy-700 border border-navy-600 rounded-lg px-4 py-3 text-white text-center focus:outline-none">
+                                <div class="mt-3 text-xs text-navy-400">
+                                    <span class="text-navy-300">Example:</span> "Solar Leads California" or "Life Insurance Over 50"
+                                </div>
+                            </div>
+                            <button class="mt-6 bg-white text-navy-700 px-8 py-2 rounded-lg font-medium">
+                                Continue →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 2: Industry -->
+                    <div class="bg-navy-800 rounded-xl overflow-hidden">
+                        <div class="bg-navy-700 px-4 py-2 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-navy-500 text-white text-xs px-2 py-0.5 rounded">2 of 6</span>
+                                <span class="text-navy-300 text-xs">Industry</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="text-white text-xl font-bold mb-2">What industry are you in?</div>
+                            <div class="text-navy-300 text-sm mb-6">Be as specific as possible — it helps the AI research better</div>
+                            <div class="max-w-md mx-auto">
+                                <input type="text" value="Veteran advocacy services" class="w-full bg-navy-700 border border-navy-600 rounded-lg px-4 py-3 text-white text-center focus:outline-none">
+                                <div class="mt-3 text-xs text-navy-400">
+                                    <span class="text-navy-300">Example:</span> "Residential solar installation" not just "Solar"
+                                </div>
+                            </div>
+                            <button class="mt-6 bg-white text-navy-700 px-8 py-2 rounded-lg font-medium">
+                                Continue →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 3: Market -->
+                    <div class="bg-navy-800 rounded-xl overflow-hidden">
+                        <div class="bg-navy-700 px-4 py-2 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-navy-500 text-white text-xs px-2 py-0.5 rounded">3 of 6</span>
+                                <span class="text-navy-300 text-xs">Target Market</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="text-white text-xl font-bold mb-2">Who is your target market?</div>
+                            <div class="text-navy-300 text-sm mb-6">Describe the people you want to reach</div>
+                            <div class="max-w-md mx-auto">
+                                <textarea class="w-full bg-navy-700 border border-navy-600 rounded-lg px-4 py-3 text-white text-center focus:outline-none h-24 resize-none">Australian military veterans seeking compensation for service-related injuries through DVA</textarea>
+                                <div class="mt-3 text-xs text-navy-400">
+                                    <span class="text-navy-300">Example:</span> "Homeowners in Texas with high electricity bills"
+                                </div>
+                            </div>
+                            <button class="mt-6 bg-white text-navy-700 px-8 py-2 rounded-lg font-medium">
+                                Continue →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 4: Products/Services -->
+                    <div class="bg-navy-800 rounded-xl overflow-hidden">
+                        <div class="bg-navy-700 px-4 py-2 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-navy-500 text-white text-xs px-2 py-0.5 rounded">4 of 6</span>
+                                <span class="text-navy-300 text-xs">Products & Services</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="text-white text-xl font-bold mb-2">What do you offer?</div>
+                            <div class="text-navy-300 text-sm mb-6">List your main products or services</div>
+                            <div class="max-w-md mx-auto">
+                                <textarea class="w-full bg-navy-700 border border-navy-600 rounded-lg px-4 py-3 text-white text-center focus:outline-none h-24 resize-none">DVA claims preparation, rejected claim appeals, medical evidence coordination</textarea>
+                                <div class="mt-3 text-xs text-navy-400">
+                                    <span class="text-navy-300">Example:</span> "Solar panel installation, battery storage, financing"
+                                </div>
+                            </div>
+                            <button class="mt-6 bg-white text-navy-700 px-8 py-2 rounded-lg font-medium">
+                                Continue →
+                            </button>
+                        </div>
+                    </div>
+
+                    <!-- Step 5: Website (Optional) -->
+                    <div class="bg-navy-800 rounded-xl overflow-hidden">
+                        <div class="bg-navy-700 px-4 py-2 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-navy-500 text-white text-xs px-2 py-0.5 rounded">5 of 6</span>
+                                <span class="text-navy-300 text-xs">Website</span>
+                                <span class="bg-navy-600 text-navy-300 text-xs px-1.5 py-0.5 rounded">Optional</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-navy-500"></div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="text-white text-xl font-bold mb-2">Do you have a website?</div>
+                            <div class="text-navy-300 text-sm mb-6">We'll analyze it to understand your business better</div>
+                            <div class="max-w-md mx-auto">
+                                <input type="text" placeholder="https://yourwebsite.com" class="w-full bg-navy-700 border border-navy-600 rounded-lg px-4 py-3 text-white text-center focus:outline-none">
+                            </div>
+                            <div class="mt-6 flex justify-center gap-3">
+                                <button class="text-navy-300 px-6 py-2 rounded-lg font-medium">Skip</button>
+                                <button class="bg-white text-navy-700 px-8 py-2 rounded-lg font-medium">Continue →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Step 6: Competitors (Optional) -->
+                    <div class="bg-navy-800 rounded-xl overflow-hidden">
+                        <div class="bg-navy-700 px-4 py-2 flex items-center justify-between">
+                            <div class="flex items-center gap-2">
+                                <span class="bg-navy-500 text-white text-xs px-2 py-0.5 rounded">6 of 6</span>
+                                <span class="text-navy-300 text-xs">Competitors</span>
+                                <span class="bg-navy-600 text-navy-300 text-xs px-1.5 py-0.5 rounded">Optional</span>
+                            </div>
+                            <div class="flex gap-1">
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                                <div class="w-2 h-2 rounded-full bg-white"></div>
+                            </div>
+                        </div>
+                        <div class="p-8 text-center">
+                            <div class="text-white text-xl font-bold mb-2">Who are your competitors?</div>
+                            <div class="text-navy-300 text-sm mb-6">We'll research what's working for them</div>
+                            <div class="max-w-md mx-auto">
+                                <input type="text" placeholder="company1.com, company2.com" class="w-full bg-navy-700 border border-navy-600 rounded-lg px-4 py-3 text-white text-center focus:outline-none">
+                            </div>
+                            <div class="mt-6 flex justify-center gap-3">
+                                <button class="text-navy-300 px-6 py-2 rounded-lg font-medium">Skip</button>
+                                <button class="bg-white text-navy-700 px-8 py-2 rounded-lg font-medium">Create My Vault →</button>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="mt-6 pt-4 border-t border-navy-100">
+                    <div class="flex items-center gap-2 text-sm flex-wrap">
+                        <span class="text-navy-400">Output:</span>
+                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Vault created</span>
+                        <span class="text-navy-300">→</span>
+                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Customer Magnet runs</span>
+                        <span class="text-navy-300">→</span>
+                        <span class="bg-navy-700 text-white px-2 py-0.5 rounded text-xs font-medium">customer_magnet.md</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="flex justify-center">
+            <div class="text-navy-200 text-2xl">↓</div>
+        </div>
+
+        <!-- STEP 3: Segments -->
+        <div class="flex gap-4">
+            <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden flex-1">
+                <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 3</span>
+                        <span class="font-medium text-lg">Segments List</span>
+                    </div>
+                    <span class="text-xs text-navy-300">Auto-generated from Customer Magnet</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold text-navy-800 mb-3">Market Segmentation auto generates from the Customer Magnet</h3>
+                            <div class="space-y-3 text-sm">
+                                <div>
+                                    <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Input</div>
+                                    <div class="text-navy-500">customer_magnet.md</div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Creates in Vault</div>
+                                    <div class="code rounded p-2">
+                                        🌐 /vault/segments<br>
+                                        <span class="text-navy-400">├─</span> Segment 1: Rejected Fighter<br>
+                                        <span class="text-navy-400">├─</span> Segment 2: Financial Crisis<br>
+                                        <span class="text-navy-400">└─</span> Segment 3: First-Timer
+                                    </div>
+                                </div>
+                                <div>
+                                    <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">User Action</div>
+                                    <div class="text-navy-500">Selects one segment to focus on</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-navy-400 uppercase tracking-wider mb-2">Vault State</div>
+                            <div class="bg-navy-800 rounded-lg p-4">
+                                <div class="space-y-1 text-xs">
+                                    <div class="flex items-center gap-2 text-navy-400">
+                                        <span>📄</span><span>customer_magnet.md</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-white">
+                                        <span>📄</span><span>segments.md</span>
+                                        <span class="bg-navy-600 text-navy-200 px-1.5 py-0.5 rounded text-[10px]">NEW</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="mt-4 bg-navy-50 rounded-lg p-3 space-y-2">
+                                <div class="bg-white border-2 border-navy-700 rounded p-2 flex items-center gap-2 text-xs">
+                                    <span>😤</span><span class="font-medium text-navy-700">Rejected Fighter</span>
+                                    <span class="ml-auto text-navy-700">✓</span>
+                                </div>
+                                <div class="bg-white border border-navy-100 rounded p-2 flex items-center gap-2 text-xs text-navy-400">
+                                    <span>💰</span><span>Financial Crisis</span>
+                                </div>
+                                <div class="bg-white border border-navy-100 rounded p-2 flex items-center gap-2 text-xs text-navy-400">
+                                    <span>🆕</span><span>First-Timer</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Output Sidebar -->
+            <div class="w-48 flex-shrink-0">
+                <div class="bg-navy-700 rounded-xl p-4 sticky top-6">
+                    <div class="text-xs text-navy-300 uppercase tracking-wider mb-3">Example Output</div>
+                    <a href="veteran-segments.html" target="_blank" class="block bg-navy-600 hover:bg-navy-500 rounded-lg p-3 transition-colors">
+                        <div class="text-white text-sm font-medium mb-1">Market Segments</div>
+                        <div class="text-navy-300 text-xs">Veteran Advocacy</div>
+                        <div class="mt-2 text-navy-200 text-xs flex items-center gap-1">
+                            <span>View →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="flex justify-center">
+            <div class="text-navy-200 text-2xl">↓</div>
+        </div>
+
+        <!-- STEP 4: Segment Profile -->
+        <div class="flex gap-4">
+            <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden flex-1">
+                <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+                    <div class="flex items-center gap-3">
+                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 4</span>
+                        <span class="font-medium text-lg">Segment Profile + Journey</span>
+                    </div>
+                    <span class="text-xs text-navy-300">Generated for selected segment</span>
+                </div>
+                <div class="p-6">
+                    <div class="grid md:grid-cols-2 gap-6">
+                        <div>
+                            <h3 class="font-bold text-navy-800 mb-3">Deep Dive on Chosen Segment</h3>
+                            <div class="text-sm">
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Creates in Vault</div>
+                                <div class="code rounded p-2">
+                                    📄 rejected_fighter.md<br>
+                                    <span class="text-navy-400">├─</span> Persona (Steve)<br>
+                                    <span class="text-navy-400">├─</span> His triggers<br>
+                                    <span class="text-navy-400">├─</span> His objections<br>
+                                    <span class="text-navy-400">├─</span> What he needs to hear<br>
+                                    <span class="text-navy-400">└─</span> <strong>Journey questions</strong>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="text-xs text-navy-400 uppercase tracking-wider mb-2">Vault State</div>
+                            <div class="bg-navy-800 rounded-lg p-4 mb-4">
+                                <div class="space-y-1 text-xs">
+                                    <div class="flex items-center gap-2 text-navy-400">
+                                        <span>📄</span><span>customer_magnet.md</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-navy-400">
+                                        <span>📄</span><span>segments.md</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-white">
+                                        <span>📄</span><span>rejected_fighter.md</span>
+                                        <span class="bg-navy-600 text-navy-200 px-1.5 py-0.5 rounded text-[10px]">NEW</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="bg-navy-700 text-white rounded-lg p-3 text-center text-sm font-medium">
+                                Build Decision Tree →
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Example Output Sidebar -->
+            <div class="w-48 flex-shrink-0">
+                <div class="bg-navy-700 rounded-xl p-4 sticky top-6">
+                    <div class="text-xs text-navy-300 uppercase tracking-wider mb-3">Example Output</div>
+                    <a href="rejected-figher.html" target="_blank" class="block bg-navy-600 hover:bg-navy-500 rounded-lg p-3 transition-colors">
+                        <div class="text-white text-sm font-medium mb-1">LeadsHook Guide</div>
+                        <div class="text-navy-300 text-xs">Segment Profile + Journey</div>
+                        <div class="mt-2 text-navy-200 text-xs flex items-center gap-1">
+                            <span>View →</span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="flex justify-center">
+            <div class="text-navy-200 text-2xl">↓</div>
+        </div>
+
+        <!-- STEP 5: Decision Tree Builder -->
+        <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden">
+            <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 5</span>
+                    <span class="font-medium text-lg">Decision Tree Builder</span>
+                </div>
+                <span class="text-xs text-navy-300">Questions pre-loaded from profile</span>
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-navy-800 mb-3">Build the Funnel</h3>
+                        <ul class="text-sm text-navy-500 space-y-1">
+                            <li>• Questions pre-loaded from segment profile</li>
+                            <li>• Set up branching logic</li>
+                            <li>• Configure lead scoring</li>
+                            <li>• Design results pages</li>
+                            <li>• Connect integrations</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <div class="text-xs text-navy-400 uppercase tracking-wider mb-2">Final Vault State</div>
+                        <div class="bg-navy-800 rounded-lg p-4">
+                            <div class="space-y-1 text-xs">
+                                <div class="flex items-center gap-2 text-navy-400">
+                                    <span>📄</span><span>customer_magnet.md</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-navy-400">
+                                    <span>📄</span><span>segments.md</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-navy-400">
+                                    <span>📄</span><span>rejected_fighter.md</span>
+                                </div>
+                                <div class="flex items-center gap-2 text-white">
+                                    <span>🔧</span><span>Rejected Fighter Project</span>
+                                    <span class="bg-navy-600 text-navy-200 px-1.5 py-0.5 rounded text-[10px]">LIVE</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Repeat Loop -->
+        <div class="bg-navy-100 rounded-xl p-6 mt-8">
+            <div class="flex items-center gap-4">
+                <div class="text-2xl">🔄</div>
+                <div>
+                    <h3 class="font-bold text-navy-700 mb-1">Repeat for Next Segment</h3>
+                    <p class="text-sm text-navy-500">
+                        Return to <code class="bg-navy-200 px-1 rounded text-xs">segments.md</code>, select another segment, get new profile, build another DT.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Summary Flow -->
+        <div class="bg-navy-700 text-white rounded-xl p-6 mt-8">
+            <div class="text-xs text-navy-300 uppercase tracking-wider mb-4">Flow Summary</div>
+            <div class="flex flex-wrap items-center gap-2 text-sm">
+                <span class="bg-navy-600 px-3 py-1 rounded">Homepage</span>
+                <span class="text-navy-400">→</span>
+                <span class="bg-navy-600 px-3 py-1 rounded">Niche Page</span>
+                <span class="text-navy-400">→</span>
+                <span class="bg-navy-600 px-3 py-1 rounded">Signup</span>
+                <span class="text-navy-400">→</span>
+                <span class="bg-navy-600 px-3 py-1 rounded">Onboarding</span>
+                <span class="text-navy-400">→</span>
+                <span class="bg-navy-600 px-3 py-1 rounded">Segments</span>
+                <span class="text-navy-400">→</span>
+                <span class="bg-navy-600 px-3 py-1 rounded">Profile</span>
+                <span class="text-navy-400">→</span>
+                <span class="bg-navy-500 px-3 py-1 rounded">Build DT</span>
+            </div>
+        </div>
+
+        <!-- Notes -->
+        <div class="bg-navy-50 border border-navy-100 rounded-xl p-6 mt-8">
+            <div class="flex items-start gap-3">
+                <span class="text-xl">📝</span>
+                <div>
+                    <h3 class="font-bold text-navy-700 mb-2">Implementation Notes</h3>
+                    <ul class="text-sm text-navy-500 space-y-2">
+                        <li><strong>Pre-generated pages:</strong> Start with 8-10 top niches. Add more based on search demand.</li>
+                        <li><strong>Onboarding:</strong> Niche from URL should pre-fill Industry & Market fields where possible.</li>
+                        <li><strong>Document upload:</strong> Can be added as optional step after competitors.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-navy-200">
+        <div class="flex items-center justify-between text-xs text-navy-400">
+            <div>LeadsHook User Flow — Dev Spec v2</div>
+            <div>Pending confirmation</div>
+        </div>
+    </div>
+
+</body>
+</html>
