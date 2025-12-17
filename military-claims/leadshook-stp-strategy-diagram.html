@@ -26,6 +26,38 @@
                             400: '#fbbf24',
                             500: '#f59e0b',
                             600: '#d97706',
+                        },
+                        emerald: {
+                            400: '#34d399',
+                            500: '#10b981',
+                            600: '#059669',
+                        },
+                        violet: {
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                        },
+                        rose: {
+                            400: '#fb7185',
+                            500: '#f43f5e',
+                            600: '#e11d48',
+                        },
+                        cyan: {
+                            400: '#22d3ee',
+                            500: '#06b6d4',
+                            600: '#0891b2',
+                        },
+                        orange: {
+                            400: '#fb923c',
+                            500: '#f97316',
+                            600: '#ea580c',
+                        },
+                        amber: {
+                            50: '#fffbeb',
+                            100: '#fef3c7',
+                            200: '#fde68a',
+                            700: '#b45309',
+                            800: '#92400e',
                         }
                     }
                 }
@@ -55,23 +87,30 @@
     <!-- Header -->
     <div class="max-w-6xl mx-auto mb-8">
         <div class="flex items-center gap-3 mb-2">
-            <span class="bg-navy-700 text-white text-xs font-bold px-2 py-1 rounded">DEV SPEC</span>
-            <span class="bg-navy-100 text-navy-500 text-xs font-medium px-2 py-1 rounded">Pending Confirmation</span>
+            <span class="bg-gradient-to-r from-accent-500 to-accent-600 text-navy-900 text-xs font-bold px-3 py-1 rounded-md shadow-sm">DEV SPEC</span>
+            <span class="bg-amber-100 text-amber-700 text-xs font-medium px-2 py-1 rounded border border-amber-200">Pending Confirmation</span>
         </div>
         <h1 class="text-2xl font-bold text-navy-800">LeadsHook User Flow</h1>
-        <p class="text-navy-400 text-sm mt-1">Homepage → Niche Page → Signup → Onboarding → Vault Docs → Build DT</p>
+        <p class="text-navy-400 text-sm mt-1">
+            <span class="text-accent-500 font-medium">Homepage</span> →
+            <span class="text-accent-500 font-medium">Niche Page</span> →
+            <span class="text-accent-500 font-medium">Signup</span> →
+            <span class="text-accent-500 font-medium">Onboarding</span> →
+            <span class="text-accent-500 font-medium">Vault Docs</span> →
+            <span class="text-accent-600 font-bold">Build DT</span>
+        </p>
     </div>
 
     <div class="max-w-6xl mx-auto space-y-6">
 
         <!-- STEP 0: Homepage -->
-        <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden">
-            <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+        <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                 <div class="flex items-center gap-3">
                     <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 0</span>
                     <span class="font-medium text-lg">Homepage</span>
                 </div>
-                <span class="text-xs text-navy-300">leadshook.com</span>
+                <span class="text-xs text-accent-400">leadshook.com</span>
             </div>
             <div class="p-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -128,58 +167,58 @@
 
         <!-- Arrow -->
         <div class="flex justify-center">
-            <div class="text-navy-200 text-2xl">↓</div>
+            <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
         <!-- STEP 1: Niche Page -->
         <div class="flex gap-4">
-            <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden flex-1">
-                <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+            <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden flex-1">
+                <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 1</span>
                         <span class="font-medium text-lg">Niche Page</span>
                     </div>
-                    <span class="text-xs text-navy-300">leadshook.com/niche/[slug]</span>
+                    <span class="text-xs text-accent-400">leadshook.com/niche/[slug]</span>
                 </div>
                 <div class="p-6">
                     <!-- Two scenarios -->
                     <div class="grid md:grid-cols-2 gap-6 mb-6">
-                        <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+                        <div class="bg-emerald-50 border border-emerald-200 rounded-xl p-4">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="bg-navy-700 text-white text-xs px-2 py-0.5 rounded">A</span>
-                                <span class="text-navy-700 font-medium text-sm">Pre-generated Page Exists</span>
+                                <span class="bg-emerald-500 text-white text-xs px-2 py-0.5 rounded">A</span>
+                                <span class="text-emerald-700 font-medium text-sm">Pre-generated Page Exists</span>
                             </div>
                             <ul class="text-sm text-navy-500 space-y-2">
                                 <li class="flex items-start gap-2">
-                                    <span class="text-navy-300">✓</span>
-                                    <span>Instant load (no AI wait)</span>
+                                    <span class="text-emerald-500">✓</span>
+                                    <span>Pixel perfect</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <span class="text-navy-300">✓</span>
+                                    <span class="text-emerald-500">✓</span>
                                     <span>SEO indexed & rankable</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <span class="text-navy-300">✓</span>
+                                    <span class="text-emerald-500">✓</span>
                                     <span>No API cost per visit</span>
                                 </li>
                             </ul>
                         </div>
-                        <div class="bg-navy-50 border border-navy-100 rounded-xl p-4">
+                        <div class="bg-orange-50 border border-orange-200 rounded-xl p-4">
                             <div class="flex items-center gap-2 mb-3">
-                                <span class="bg-navy-300 text-white text-xs px-2 py-0.5 rounded">B</span>
-                                <span class="text-navy-700 font-medium text-sm">Generated On Demand</span>
+                                <span class="bg-orange-500 text-white text-xs px-2 py-0.5 rounded">B</span>
+                                <span class="text-orange-700 font-medium text-sm">Generated On Demand</span>
                             </div>
                             <ul class="text-sm text-navy-500 space-y-2">
                                 <li class="flex items-start gap-2">
-                                    <span class="text-navy-300">⏳</span>
+                                    <span class="text-orange-500">⏳</span>
                                     <span>Loading state while AI generates</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <span class="text-navy-300">💰</span>
+                                    <span class="text-orange-500">💰</span>
                                     <span>API cost per generation</span>
                                 </li>
                                 <li class="flex items-start gap-2">
-                                    <span class="text-navy-300">📝</span>
+                                    <span class="text-orange-500">📝</span>
                                     <span>Option to cache after first gen?</span>
                                 </li>
                             </ul>
@@ -278,12 +317,12 @@
             </div>
             <!-- Example Output Sidebar -->
             <div class="w-48 flex-shrink-0">
-                <div class="bg-navy-700 rounded-xl p-4 sticky top-6">
-                    <div class="text-xs text-navy-300 uppercase tracking-wider mb-3">Example Output</div>
-                    <a href="Military_Claims_Landing_Page_Tailwind.html" target="_blank" class="block bg-navy-600 hover:bg-navy-500 rounded-lg p-3 transition-colors">
-                        <div class="text-white text-sm font-medium mb-1">Military Claims</div>
-                        <div class="text-navy-300 text-xs">Landing Page</div>
-                        <div class="mt-2 text-navy-200 text-xs flex items-center gap-1">
+                <div class="bg-gradient-to-br from-accent-500 to-accent-600 rounded-xl p-4 sticky top-6">
+                    <div class="text-xs text-amber-100 uppercase tracking-wider mb-3">Example Output</div>
+                    <a href="Military_Claims_Landing_Page_Tailwind.html" target="_blank" class="block bg-white/20 hover:bg-white/30 rounded-lg p-3 transition-colors">
+                        <div class="text-navy-900 text-sm font-medium mb-1">Military Claims</div>
+                        <div class="text-navy-700 text-xs">Landing Page</div>
+                        <div class="mt-2 text-navy-900 text-xs flex items-center gap-1 font-medium">
                             <span>View →</span>
                         </div>
                     </a>
@@ -293,17 +332,17 @@
 
         <!-- Arrow -->
         <div class="flex justify-center">
-            <div class="text-navy-200 text-2xl">↓</div>
+            <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
         <!-- STEP 2: Onboarding -->
-        <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden">
-            <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+        <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                 <div class="flex items-center gap-3">
                     <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 2</span>
                     <span class="font-medium text-lg">Onboarding Flow</span>
                 </div>
-                <span class="text-xs text-navy-300">Post-signup — Creates Customer Magnet</span>
+                <span class="text-xs text-accent-400">Post-signup — Creates Customer Magnet</span>
             </div>
             <div class="p-6">
                 <div class="mb-6">
@@ -515,18 +554,18 @@
 
         <!-- Arrow -->
         <div class="flex justify-center">
-            <div class="text-navy-200 text-2xl">↓</div>
+            <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
         <!-- STEP 3: Segments -->
         <div class="flex gap-4">
-            <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden flex-1">
-                <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+            <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden flex-1">
+                <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 3</span>
                         <span class="font-medium text-lg">Segments List</span>
                     </div>
-                    <span class="text-xs text-navy-300">Auto-generated from Customer Magnet</span>
+                    <span class="text-xs text-accent-400">Auto-generated from Customer Magnet</span>
                 </div>
                 <div class="p-6">
                     <div class="grid md:grid-cols-2 gap-6">
@@ -561,19 +600,19 @@
                                     </div>
                                     <div class="flex items-center gap-2 text-white">
                                         <span>📄</span><span>segments.md</span>
-                                        <span class="bg-navy-600 text-navy-200 px-1.5 py-0.5 rounded text-[10px]">NEW</span>
+                                        <span class="bg-emerald-500 text-white px-1.5 py-0.5 rounded text-[10px] font-medium">NEW</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="mt-4 bg-navy-50 rounded-lg p-3 space-y-2">
-                                <div class="bg-white border-2 border-navy-700 rounded p-2 flex items-center gap-2 text-xs">
-                                    <span>😤</span><span class="font-medium text-navy-700">Rejected Fighter</span>
-                                    <span class="ml-auto text-navy-700">✓</span>
+                            <div class="mt-4 bg-amber-50 rounded-lg p-3 space-y-2 border border-amber-200">
+                                <div class="bg-white border-2 border-accent-500 rounded p-2 flex items-center gap-2 text-xs shadow-sm">
+                                    <span>😤</span><span class="font-medium text-amber-700">Rejected Fighter</span>
+                                    <span class="ml-auto text-accent-500 font-bold">✓</span>
                                 </div>
-                                <div class="bg-white border border-navy-100 rounded p-2 flex items-center gap-2 text-xs text-navy-400">
+                                <div class="bg-white border border-navy-100 rounded p-2 flex items-center gap-2 text-xs text-navy-400 hover:border-accent-400 transition-colors cursor-pointer">
                                     <span>💰</span><span>Financial Crisis</span>
                                 </div>
-                                <div class="bg-white border border-navy-100 rounded p-2 flex items-center gap-2 text-xs text-navy-400">
+                                <div class="bg-white border border-navy-100 rounded p-2 flex items-center gap-2 text-xs text-navy-400 hover:border-accent-400 transition-colors cursor-pointer">
                                     <span>🆕</span><span>First-Timer</span>
                                 </div>
                             </div>
@@ -583,12 +622,12 @@
             </div>
             <!-- Example Output Sidebar -->
             <div class="w-48 flex-shrink-0">
-                <div class="bg-navy-700 rounded-xl p-4 sticky top-6">
-                    <div class="text-xs text-navy-300 uppercase tracking-wider mb-3">Example Output</div>
-                    <a href="veteran-segments.html" target="_blank" class="block bg-navy-600 hover:bg-navy-500 rounded-lg p-3 transition-colors">
-                        <div class="text-white text-sm font-medium mb-1">Market Segments</div>
-                        <div class="text-navy-300 text-xs">Veteran Advocacy</div>
-                        <div class="mt-2 text-navy-200 text-xs flex items-center gap-1">
+                <div class="bg-gradient-to-br from-accent-500 to-accent-600 rounded-xl p-4 sticky top-6">
+                    <div class="text-xs text-amber-100 uppercase tracking-wider mb-3">Example Output</div>
+                    <a href="veteran-segments.html" target="_blank" class="block bg-white/20 hover:bg-white/30 rounded-lg p-3 transition-colors">
+                        <div class="text-navy-900 text-sm font-medium mb-1">Market Segments</div>
+                        <div class="text-navy-700 text-xs">Veteran Advocacy</div>
+                        <div class="mt-2 text-navy-900 text-xs flex items-center gap-1 font-medium">
                             <span>View →</span>
                         </div>
                     </a>
@@ -598,18 +637,18 @@
 
         <!-- Arrow -->
         <div class="flex justify-center">
-            <div class="text-navy-200 text-2xl">↓</div>
+            <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
         <!-- STEP 4: Segment Profile -->
         <div class="flex gap-4">
-            <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden flex-1">
-                <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+            <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden flex-1">
+                <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                     <div class="flex items-center gap-3">
                         <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 4</span>
                         <span class="font-medium text-lg">Segment Profile + Journey</span>
                     </div>
-                    <span class="text-xs text-navy-300">Generated for selected segment</span>
+                    <span class="text-xs text-accent-400">Generated for selected segment</span>
                 </div>
                 <div class="p-6">
                     <div class="grid md:grid-cols-2 gap-6">
@@ -639,11 +678,11 @@
                                     </div>
                                     <div class="flex items-center gap-2 text-white">
                                         <span>📄</span><span>rejected_fighter.md</span>
-                                        <span class="bg-navy-600 text-navy-200 px-1.5 py-0.5 rounded text-[10px]">NEW</span>
+                                        <span class="bg-rose-500 text-white px-1.5 py-0.5 rounded text-[10px] font-medium">NEW</span>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bg-navy-700 text-white rounded-lg p-3 text-center text-sm font-medium">
+                            <div class="bg-gradient-to-r from-accent-500 to-accent-600 text-navy-900 rounded-lg p-3 text-center text-sm font-bold shadow-md hover:shadow-lg transition-shadow cursor-pointer">
                                 Build Decision Tree →
                             </div>
                         </div>
@@ -652,12 +691,12 @@
             </div>
             <!-- Example Output Sidebar -->
             <div class="w-48 flex-shrink-0">
-                <div class="bg-navy-700 rounded-xl p-4 sticky top-6">
-                    <div class="text-xs text-navy-300 uppercase tracking-wider mb-3">Example Output</div>
-                    <a href="rejected-figher.html" target="_blank" class="block bg-navy-600 hover:bg-navy-500 rounded-lg p-3 transition-colors">
-                        <div class="text-white text-sm font-medium mb-1">LeadsHook Guide</div>
-                        <div class="text-navy-300 text-xs">Segment Profile + Journey</div>
-                        <div class="mt-2 text-navy-200 text-xs flex items-center gap-1">
+                <div class="bg-gradient-to-br from-accent-500 to-accent-600 rounded-xl p-4 sticky top-6">
+                    <div class="text-xs text-amber-100 uppercase tracking-wider mb-3">Example Output</div>
+                    <a href="rejected-figher.html" target="_blank" class="block bg-white/20 hover:bg-white/30 rounded-lg p-3 transition-colors">
+                        <div class="text-navy-900 text-sm font-medium mb-1">LeadsHook Guide</div>
+                        <div class="text-navy-700 text-xs">Segment Profile + Journey</div>
+                        <div class="mt-2 text-navy-900 text-xs flex items-center gap-1 font-medium">
                             <span>View →</span>
                         </div>
                     </a>
@@ -667,17 +706,17 @@
 
         <!-- Arrow -->
         <div class="flex justify-center">
-            <div class="text-navy-200 text-2xl">↓</div>
+            <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
         <!-- STEP 5: Decision Tree Builder -->
-        <div class="flow-card bg-white rounded-xl border border-navy-100 overflow-hidden">
-            <div class="bg-navy-700 text-white px-4 py-2 flex items-center justify-between">
+        <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                 <div class="flex items-center gap-3">
                     <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 5</span>
                     <span class="font-medium text-lg">Decision Tree Builder</span>
                 </div>
-                <span class="text-xs text-navy-300">Questions pre-loaded from profile</span>
+                <span class="text-xs text-accent-400">Questions pre-loaded from profile</span>
             </div>
             <div class="p-6">
                 <div class="grid md:grid-cols-2 gap-6">
@@ -706,7 +745,7 @@
                                 </div>
                                 <div class="flex items-center gap-2 text-white">
                                     <span>🔧</span><span>Rejected Fighter Project</span>
-                                    <span class="bg-navy-600 text-navy-200 px-1.5 py-0.5 rounded text-[10px]">LIVE</span>
+                                    <span class="bg-emerald-500 text-white px-1.5 py-0.5 rounded text-[10px] font-medium animate-pulse">LIVE</span>
                                 </div>
                             </div>
                         </div>
@@ -716,48 +755,48 @@
         </div>
 
         <!-- Repeat Loop -->
-        <div class="bg-navy-100 rounded-xl p-6 mt-8">
+        <div class="bg-gradient-to-r from-amber-50 to-amber-100 border border-amber-200 rounded-xl p-6 mt-8">
             <div class="flex items-center gap-4">
-                <div class="text-2xl">🔄</div>
+                <div class="text-3xl bg-white rounded-full w-12 h-12 flex items-center justify-center shadow-sm border border-amber-200">🔄</div>
                 <div>
-                    <h3 class="font-bold text-navy-700 mb-1">Repeat for Next Segment</h3>
-                    <p class="text-sm text-navy-500">
-                        Return to <code class="bg-navy-200 px-1 rounded text-xs">segments.md</code>, select another segment, get new profile, build another DT.
+                    <h3 class="font-bold text-amber-800 mb-1">Repeat for Next Segment</h3>
+                    <p class="text-sm text-navy-600">
+                        Return to <code class="bg-amber-200 text-amber-800 px-1.5 py-0.5 rounded text-xs font-medium">segments.md</code>, select another segment, get new profile, build another DT.
                     </p>
                 </div>
             </div>
         </div>
 
         <!-- Summary Flow -->
-        <div class="bg-navy-700 text-white rounded-xl p-6 mt-8">
+        <div class="bg-gradient-to-r from-navy-800 to-navy-700 text-white rounded-xl p-6 mt-8">
             <div class="text-xs text-navy-300 uppercase tracking-wider mb-4">Flow Summary</div>
             <div class="flex flex-wrap items-center gap-2 text-sm">
-                <span class="bg-navy-600 px-3 py-1 rounded">Homepage</span>
-                <span class="text-navy-400">→</span>
-                <span class="bg-navy-600 px-3 py-1 rounded">Niche Page</span>
-                <span class="text-navy-400">→</span>
-                <span class="bg-navy-600 px-3 py-1 rounded">Signup</span>
-                <span class="text-navy-400">→</span>
-                <span class="bg-navy-600 px-3 py-1 rounded">Onboarding</span>
-                <span class="text-navy-400">→</span>
-                <span class="bg-navy-600 px-3 py-1 rounded">Segments</span>
-                <span class="text-navy-400">→</span>
-                <span class="bg-navy-600 px-3 py-1 rounded">Profile</span>
-                <span class="text-navy-400">→</span>
-                <span class="bg-navy-500 px-3 py-1 rounded">Build DT</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Homepage</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Niche Page</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Signup</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Onboarding</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Segments</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Profile</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-bold shadow-md">Build DT</span>
             </div>
         </div>
 
         <!-- Notes -->
-        <div class="bg-navy-50 border border-navy-100 rounded-xl p-6 mt-8">
+        <div class="bg-gradient-to-r from-amber-50 to-orange-50 border border-amber-200 rounded-xl p-6 mt-8">
             <div class="flex items-start gap-3">
-                <span class="text-xl">📝</span>
+                <span class="text-2xl bg-amber-100 rounded-lg p-2">📝</span>
                 <div>
-                    <h3 class="font-bold text-navy-700 mb-2">Implementation Notes</h3>
-                    <ul class="text-sm text-navy-500 space-y-2">
-                        <li><strong>Pre-generated pages:</strong> Start with 8-10 top niches. Add more based on search demand.</li>
-                        <li><strong>Onboarding:</strong> Niche from URL should pre-fill Industry & Market fields where possible.</li>
-                        <li><strong>Document upload:</strong> Can be added as optional step after competitors.</li>
+                    <h3 class="font-bold text-amber-800 mb-2">Implementation Notes</h3>
+                    <ul class="text-sm text-navy-600 space-y-2">
+                        <li><strong class="text-amber-700">Pre-generated pages:</strong> Start with 8-10 top niches. Add more based on search demand.</li>
+                        <li><strong class="text-amber-700">Onboarding:</strong> Niche from URL should pre-fill Industry & Market fields where possible.</li>
+                        <li><strong class="text-amber-700">Document upload:</strong> Can be added as optional step after competitors.</li>
                     </ul>
                 </div>
             </div>
@@ -768,8 +807,13 @@
     <!-- Footer -->
     <div class="max-w-6xl mx-auto mt-8 pt-6 border-t border-navy-200">
         <div class="flex items-center justify-between text-xs text-navy-400">
-            <div>LeadsHook User Flow — Dev Spec v2</div>
-            <div>Pending confirmation</div>
+            <div class="flex items-center gap-2">
+                <span class="w-2 h-2 bg-accent-500 rounded-full"></span>
+                LeadsHook User Flow — Dev Spec v2
+            </div>
+            <div class="flex items-center gap-2">
+                <span class="bg-amber-100 text-amber-700 px-2 py-0.5 rounded text-xs border border-amber-200">Pending confirmation</span>
+            </div>
         </div>
     </div>
 
