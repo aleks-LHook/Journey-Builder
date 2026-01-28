@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Generate Qualified DVA Claims Leads | LeadsHook for Veteran Advocacy</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap" rel="stylesheet">
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
         tailwind.config = {
@@ -20,19 +21,17 @@
         }
     </script>
     <style>
-        /* Custom styles that can't be achieved with Tailwind alone */
+        /* Custom styles - Simplified Military Color Palette */
+        /* Primary: Navy (#1e3a5f) | Secondary: Olive (#2d5016) | Accent: Amber (#f59e0b) */
+        /* Success: Emerald (#10b981) | Error: Red (#ef4444) | Neutral: Slate */
+
         .gradient-hero { background: linear-gradient(135deg, #1e3a5f 0%, #2d5016 100%); }
         .gradient-dark { background: linear-gradient(135deg, #0f172a 0%, #14532d 100%); }
         .gradient-cta-btn { background: linear-gradient(90deg, #f59e0b, #fbbf24); }
-        .gradient-blue { background: linear-gradient(135deg, #3b82f6, #1d4ed8); }
-        .gradient-purple { background: linear-gradient(135deg, #8b5cf6, #6d28d9); }
         .gradient-amber { background: linear-gradient(135deg, #f59e0b, #d97706); }
         .gradient-green { background: linear-gradient(135deg, #10b981, #059669); }
         .gradient-red { background: linear-gradient(135deg, #ef4444, #dc2626); }
         .gradient-navy-olive { background: linear-gradient(135deg, #1e3a5f, #2d5016); }
-        .gradient-navy-blue { background: linear-gradient(135deg, #1e3a5f, #0369a1); }
-        .gradient-violet { background: linear-gradient(135deg, #7c3aed, #4f46e5); }
-        .gradient-orange-red { background: linear-gradient(135deg, #ea580c, #dc2626); }
         .gradient-dark-tech { background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%); }
         .gradient-screen { background: linear-gradient(180deg, #ffffff 0%, #f8fafc 100%); }
         .gradient-amber-light { background: linear-gradient(135deg, #fffbeb 0%, #fef3c7 100%); }
@@ -40,11 +39,11 @@
         .gradient-green-dark { background: linear-gradient(135deg, #d1fae5 0%, #a7f3d0 100%); }
         .gradient-amber-warm { background: linear-gradient(135deg, #fef3c7 0%, #fde68a 100%); }
         .gradient-red-light { background: linear-gradient(135deg, #fee2e2 0%, #fecaca 100%); }
-        .gradient-blue-light { background: linear-gradient(135deg, #eff6ff 0%, #dbeafe 100%); }
+        .gradient-navy-light { background: linear-gradient(135deg, #e0e7ff 0%, #c7d2fe 100%); }
 
-        /* Timeline gradient */
+        /* Timeline gradient - unified amber accent */
         .timeline-gradient {
-            background: linear-gradient(180deg, #3b82f6, #8b5cf6, #f59e0b, #10b981, #ef4444, #f59e0b);
+            background: linear-gradient(180deg, #f59e0b 0%, #d97706 100%);
         }
 
         /* Performance bars */
@@ -53,11 +52,17 @@
 </head>
 <body class="font-sans bg-gray-50 text-slate-900 leading-relaxed">
     <!-- Hero -->
-    <header class="gradient-hero text-white py-24 px-10 text-center">
-        <div class="max-w-3xl mx-auto">
-            <div class="inline-block bg-white/10 px-5 py-2 rounded-full text-sm mb-6 tracking-wide">FOR DVA CLAIMS ADVOCATES & VETERAN SERVICES</div>
-            <h1 class="text-4xl md:text-5xl font-semibold mb-6 leading-tight">Generate Veteran Leads Who Are Ready to Claim</h1>
-            <p class="text-xl opacity-90 max-w-2xl mx-auto">The difference between tyre-kickers and six-figure clients isn't luck—it's qualification, trust-building, and knowing who's ready before you pick up the phone. Here's how to build a premium veteran lead pipeline.</p>
+    <header class="gradient-hero text-white py-32 px-10 text-center">
+        <div class="max-w-6xl mx-auto">
+            <div class="inline-block bg-white/10 px-5 py-2 rounded-full text-sm mb-8 tracking-wide">FOR DVA CLAIMS ADVOCATES & VETERAN SERVICES</div>
+            <h1 class="font-semibold mb-8 leading-tight">
+                <span class="block text-5xl md:text-6xl mb-4">The DVA advocates signing <span class="text-amber-400 font-bold">20 veterans a month</span> aren't on LinkedIn.</span>
+                <span class="block text-white/60 text-2xl md:text-3xl my-4">They're not making TikTok after TikTok.</span>
+                <span class="block text-4xl md:text-5xl font-['Merriweather'] italic">They're using a form most business owners would laugh at.</span>
+            </h1>
+            <p class="text-xl opacity-90 max-w-3xl mx-auto mb-10">To everyone else, it looks like a quiz—the kind Buzzfeed made viral. Let them laugh. Behind the scenes, it's a journey that qualifies, educates, and builds trust before you ever pick up the phone. And it's feeding your ads the signals to find more veterans just like them. The longer it runs, the cheaper your leads get.</p>
+            <a href="#journey" class="inline-block gradient-cta-btn text-slate-900 font-semibold px-8 py-4 rounded-lg hover:opacity-90 transition">See How It Works →</a>
+            <p class="text-white/60 text-sm mt-4">No martech degree required.</p>
         </div>
     </header>
 
@@ -66,27 +71,12 @@
         <div class="max-w-5xl mx-auto px-10">
             <div class="grid md:grid-cols-2 gap-16 items-center">
                 <div>
-                    <h3 class="text-2xl font-semibold mb-5 text-slate-900">The Veteran Lead Generation Problem</h3>
-                    <p class="text-slate-600 mb-4">Veterans need your help. But most don't know you exist—and the ones who find you aren't always ready to proceed. You're spending hours on consultation calls with people who:</p>
-                    <ul class="my-6 space-y-3">
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-red-500 text-xl flex-shrink-0">&#10007;</span>
-                            <span><strong>Aren't actually eligible</strong> — still serving, no service-related conditions, or already claimed everything</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-red-500 text-xl flex-shrink-0">&#10007;</span>
-                            <span><strong>Are "just looking"</strong> — curious but not ready to commit to the claims process</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-red-500 text-xl flex-shrink-0">&#10007;</span>
-                            <span><strong>Don't trust advocates</strong> — burned by lawyers or confused about fees</span>
-                        </li>
-                        <li class="flex items-start gap-3 text-slate-600">
-                            <span class="text-red-500 text-xl flex-shrink-0">&#10007;</span>
-                            <span><strong>Give fake contact details</strong> — want information but don't want calls</span>
-                        </li>
-                    </ul>
-                    <p class="text-slate-600">Every unqualified consultation is an hour you could've spent helping a veteran who's actually ready. Your time is your most valuable asset.</p>
+                    <h3 class="text-2xl font-semibold mb-5 text-slate-900">You didn't get into this to manage software.</h3>
+                    <p class="text-slate-600 mb-4">You got into it to help veterans get what they're owed. But somewhere along the way, "marketing" became a second job.</p>
+                    <p class="text-slate-600 mb-4">A landing page builder. A CRM. A quiz tool. An email platform. A tracking pixel that breaks every time Apple sneezes. Five dashboards. None of them talk to each other.</p>
+                    <p class="text-slate-600 mb-4">And after all that? You're still getting calls from veterans who aren't eligible, aren't ready, or gave you a fake number because they didn't trust the process.</p>
+                    <p class="text-slate-600 mb-6 font-medium">The tools promised to help. Instead, they buried you.</p>
+                    <p class="text-slate-600">Meanwhile, the advocates signing 20 veterans a month aren't wrestling with any of this. They found a way out. One system. No stack. And it actually works.</p>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h4 class="text-center text-xs uppercase tracking-wider text-slate-500 mb-6">The Veteran Lead Quality Spectrum</h4>
@@ -130,24 +120,24 @@
     </section>
 
     <!-- The Journey -->
-    <section class="py-20 bg-white">
+    <section id="journey" class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4 text-slate-900">The Veteran Lead Generation Journey</h2>
-                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Qualified clients aren't captured with a "Contact Us" form. They're built through a journey that educates, qualifies, and builds trust before you ever speak.</p>
+                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Here's what "the form" actually does.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">It looks like a quiz. But by the time a veteran finishes, they've qualified themselves, learned what they're owed, and decided they trust you. You just pick up the phone.</p>
             </div>
 
             <!-- Journey Flow -->
             <div class="overflow-x-auto mb-16">
                 <div class="flex flex-nowrap justify-between items-start gap-4 min-w-[900px]">
                     <div class="flex-1 min-w-[140px] text-center relative">
-                        <div class="w-16 h-16 rounded-full gradient-blue flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#128100;</div>
+                        <div class="w-16 h-16 rounded-full bg-navy flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#128100;</div>
                         <h4 class="font-semibold mb-1">Traffic</h4>
                         <p class="text-sm text-slate-500">Veterans searching for DVA help via ads or organic</p>
                     </div>
                     <div class="text-slate-400 text-2xl self-center flex-shrink-0">→</div>
                     <div class="flex-1 min-w-[140px] text-center relative">
-                        <div class="w-16 h-16 rounded-full gradient-purple flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#129504;</div>
+                        <div class="w-16 h-16 rounded-full bg-navy flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#129504;</div>
                         <h4 class="font-semibold mb-1">Assessment</h4>
                         <p class="text-sm text-slate-500">Interactive tool shows potential entitlements</p>
                     </div>
@@ -159,13 +149,13 @@
                     </div>
                     <div class="text-slate-400 text-2xl self-center flex-shrink-0">→</div>
                     <div class="flex-1 min-w-[140px] text-center relative">
-                        <div class="w-16 h-16 rounded-full gradient-green flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#128274;</div>
+                        <div class="w-16 h-16 rounded-full bg-navy flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#128274;</div>
                         <h4 class="font-semibold mb-1">Verification</h4>
                         <p class="text-sm text-slate-500">Phone verification confirms real, reachable veterans</p>
                     </div>
                     <div class="text-slate-400 text-2xl self-center flex-shrink-0">→</div>
                     <div class="flex-1 min-w-[140px] text-center relative">
-                        <div class="w-16 h-16 rounded-full gradient-red flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#128222;</div>
+                        <div class="w-16 h-16 rounded-full gradient-green flex items-center justify-center text-3xl mx-auto mb-3 text-white">&#128222;</div>
                         <h4 class="font-semibold mb-1">Consultation</h4>
                         <p class="text-sm text-slate-500">You speak only to qualified, ready prospects</p>
                     </div>
@@ -176,36 +166,36 @@
             <div class="grid md:grid-cols-2 bg-white rounded-2xl overflow-hidden shadow-lg mb-10">
                 <div class="p-10 bg-red-50 border-r border-red-200">
                     <h3 class="text-red-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128308;</span> The Problem: "Contact Us" Forms Don't Work
+                        <span>&#128308;</span> Your "Contact Us" form lets everyone in.
                     </h3>
-                    <p class="text-slate-600 mb-4">A generic contact form captures everyone—eligible or not, ready or not, real details or fake. You waste hours qualifying leads who should never have reached you.</p>
-                    <p class="text-slate-600">Result: 60%+ of consultations go nowhere.</p>
+                    <p class="text-slate-600 mb-4">Eligible, ineligible, curious, committed—they all look the same in your inbox. You're the one doing the sorting. On every call.</p>
+                    <p class="text-slate-600 font-medium">60%+ of your consultations go nowhere.</p>
                 </div>
                 <div class="p-10 bg-green-50">
                     <h3 class="text-green-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128994;</span> The Solution: Interactive Eligibility Assessments
+                        <span>&#128994;</span> The quiz does the sorting for you.
                     </h3>
-                    <p class="text-slate-600 mb-4">Replace your contact form with an interactive "Am I Eligible?" assessment that educates veterans while capturing qualification data.</p>
+                    <p class="text-slate-600 mb-4">Veterans answer questions. The system scores them. You only see the ones worth calling.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#127894;</span>
                             <div>
-                                <strong class="text-slate-900">Service History Questions</strong>
-                                <span class="block text-sm text-slate-500">"When did you serve?" "Which branch?" — filters out non-veterans</span>
+                                <strong class="text-slate-900">"When did you serve?"</strong>
+                                <span class="block text-sm text-slate-500">Filters out non-veterans before they waste your time</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#129656;</span>
                             <div>
-                                <strong class="text-slate-900">Condition Checklist</strong>
-                                <span class="block text-sm text-slate-500">"Select conditions you experience" — identifies claim potential</span>
+                                <strong class="text-slate-900">"Which conditions do you experience?"</strong>
+                                <span class="block text-sm text-slate-500">Identifies claim potential automatically</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128200;</span>
                             <div>
-                                <strong class="text-slate-900">Entitlement Preview</strong>
-                                <span class="block text-sm text-slate-500">"You may be entitled to $X" — builds trust through value</span>
+                                <strong class="text-slate-900">"You may be entitled to $X"</strong>
+                                <span class="block text-sm text-slate-500">They see value. You see qualification data.</span>
                             </div>
                         </li>
                     </ul>
@@ -216,36 +206,36 @@
             <div class="grid md:grid-cols-2 bg-white rounded-2xl overflow-hidden shadow-lg mb-10">
                 <div class="p-10 bg-red-50 border-r border-red-200">
                     <h3 class="text-red-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128308;</span> The Problem: Veterans Don't Trust Advocates
+                        <span>&#128308;</span> Veterans have been burned before.
                     </h3>
-                    <p class="text-slate-600 mb-4">Many veterans have been burned by lawyers or are suspicious of "claims farmers." They want help but won't give their details to a stranger.</p>
-                    <p class="text-slate-600">Result: High-intent veterans bounce without converting.</p>
+                    <p class="text-slate-600 mb-4">Lawyers who overpromised. "Claims farmers" who disappeared. They want help—but they're not handing over their details to another stranger.</p>
+                    <p class="text-slate-600 font-medium">High-intent veterans bounce without converting.</p>
                 </div>
                 <div class="p-10 bg-green-50">
                     <h3 class="text-green-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128994;</span> The Solution: Value-First Lead Capture
+                        <span>&#128994;</span> The quiz earns trust before it asks for anything.
                     </h3>
-                    <p class="text-slate-600 mb-4">Give veterans something valuable—a personalised entitlement estimate—before asking for contact details. They experience your expertise before committing.</p>
+                    <p class="text-slate-600 mb-4">They answer questions. They get a personalised estimate. They experience your expertise before you ever ask for a phone number.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128176;</span>
                             <div>
-                                <strong class="text-slate-900">Personalised Estimates</strong>
-                                <span class="block text-sm text-slate-500">"Based on your conditions, you may be entitled to $80,000-$120,000"</span>
+                                <strong class="text-slate-900">"You may be entitled to $80,000-$120,000"</strong>
+                                <span class="block text-sm text-slate-500">Value first. Details second.</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128218;</span>
                             <div>
-                                <strong class="text-slate-900">Education Content</strong>
-                                <span class="block text-sm text-slate-500">Explain DRCA vs MRCA, what PI means, Gold Card eligibility</span>
+                                <strong class="text-slate-900">DRCA vs MRCA. PI. Gold Card.</strong>
+                                <span class="block text-sm text-slate-500">You're educating them, not selling them</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#129309;</span>
                             <div>
-                                <strong class="text-slate-900">Ex-DVA Positioning</strong>
-                                <span class="block text-sm text-slate-500">Show your credentials at the moment of highest trust</span>
+                                <strong class="text-slate-900">Your credentials, at exactly the right moment</strong>
+                                <span class="block text-sm text-slate-500">Ex-DVA? Show it when trust is highest</span>
                             </div>
                         </li>
                     </ul>
@@ -256,36 +246,36 @@
             <div class="grid md:grid-cols-2 bg-white rounded-2xl overflow-hidden shadow-lg mb-10">
                 <div class="p-10 bg-red-50 border-r border-red-200">
                     <h3 class="text-red-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128308;</span> The Problem: Fake Phone Numbers
+                        <span>&#128308;</span> Half your leads gave you fake numbers.
                     </h3>
-                    <p class="text-slate-600 mb-4">Veterans want the information but don't want sales calls. They submit fake numbers. You call, no answer, wasted time.</p>
-                    <p class="text-slate-600">Result: 30-40% of leads are unreachable.</p>
+                    <p class="text-slate-600 mb-4">They wanted the information. They didn't want the call. So they typed 0400 000 000 and moved on. You're dialling ghosts.</p>
+                    <p class="text-slate-600 font-medium">30-40% of leads never pick up.</p>
                 </div>
                 <div class="p-10 bg-green-50">
                     <h3 class="text-green-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128994;</span> The Solution: SMS Verification
+                        <span>&#128994;</span> The quiz verifies before you ever see the lead.
                     </h3>
-                    <p class="text-slate-600 mb-4">Verify phone numbers before they reach your inbox. Position it as "We'll text your personalised report"—they're receiving value, not being checked.</p>
+                    <p class="text-slate-600 mb-4">"Enter the code we just texted to get your report." They think they're unlocking value. You're confirming a real number.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128241;</span>
                             <div>
-                                <strong class="text-slate-900">SMS Code Verification</strong>
-                                <span class="block text-sm text-slate-500">Real number confirmed before you see the lead</span>
+                                <strong class="text-slate-900">SMS verification, framed as delivery</strong>
+                                <span class="block text-sm text-slate-500">They don't feel checked. They feel served.</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128172;</span>
                             <div>
-                                <strong class="text-slate-900">Framed as Delivery</strong>
-                                <span class="block text-sm text-slate-500">"Enter code to receive your entitlement report"</span>
+                                <strong class="text-slate-900">"Enter code to receive your entitlement report"</strong>
+                                <span class="block text-sm text-slate-500">The fake numbers never make it through</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#9989;</span>
                             <div>
-                                <strong class="text-slate-900">100% Reachable</strong>
-                                <span class="block text-sm text-slate-500">Every lead you call will actually answer</span>
+                                <strong class="text-slate-900">Every lead you call will answer</strong>
+                                <span class="block text-sm text-slate-500">Because they already proved they're real</span>
                             </div>
                         </li>
                     </ul>
@@ -296,36 +286,36 @@
             <div class="grid md:grid-cols-2 bg-white rounded-2xl overflow-hidden shadow-lg">
                 <div class="p-10 bg-red-50 border-r border-red-200">
                     <h3 class="text-red-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128308;</span> The Problem: Which Ads Actually Work?
+                        <span>&#128308;</span> You're spending on ads. You don't know what's working.
                     </h3>
-                    <p class="text-slate-600 mb-4">You're running Facebook ads, Google ads, maybe some content marketing. But which campaigns produce clients who actually sign? Which produce tyre-kickers?</p>
-                    <p class="text-slate-600">Result: Wasting ad spend on campaigns that generate junk leads.</p>
+                    <p class="text-slate-600 mb-4">Facebook, Google, maybe some content. Leads come in. Some sign, most don't. Which campaign produced the client? Which produced the tyre-kicker? No idea.</p>
+                    <p class="text-slate-600 font-medium">You're guessing with your ad budget.</p>
                 </div>
                 <div class="p-10 bg-green-50">
                     <h3 class="text-green-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128994;</span> The Solution: Full Attribution Tracking
+                        <span>&#128994;</span> The quiz tracks everything. Your ads get smarter.
                     </h3>
-                    <p class="text-slate-600 mb-4">Track every lead from ad click to signed client. Know which campaigns, headlines, and audiences produce your best clients.</p>
+                    <p class="text-slate-600 mb-4">Every lead carries its source. Every conversion feeds back to the ad platform. Facebook and Google learn what a good veteran looks like—and find more of them.</p>
                     <ul class="space-y-3">
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128200;</span>
                             <div>
-                                <strong class="text-slate-900">Source Tracking</strong>
-                                <span class="block text-sm text-slate-500">Which ad campaign brought this veteran?</span>
+                                <strong class="text-slate-900">Full attribution, ad click to signed client</strong>
+                                <span class="block text-sm text-slate-500">Not just "which ad got a lead"—which ad got a client</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2 border-b border-black/5">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#127919;</span>
                             <div>
-                                <strong class="text-slate-900">Quality by Source</strong>
-                                <span class="block text-sm text-slate-500">Facebook vs Google—which produces better clients?</span>
+                                <strong class="text-slate-900">Server-side tracking that actually works</strong>
+                                <span class="block text-sm text-slate-500">No more broken pixels. No more iOS14 excuses.</span>
                             </div>
                         </li>
                         <li class="flex items-start gap-3 py-2">
                             <span class="w-7 h-7 rounded bg-white flex items-center justify-center text-sm flex-shrink-0">&#128176;</span>
                             <div>
-                                <strong class="text-slate-900">ROI Visibility</strong>
-                                <span class="block text-sm text-slate-500">Know your true cost per signed client, not just cost per lead</span>
+                                <strong class="text-slate-900">The flywheel kicks in</strong>
+                                <span class="block text-sm text-slate-500">Better data → better targeting → cheaper leads → more veterans helped</span>
                             </div>
                         </li>
                     </ul>
@@ -338,8 +328,8 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4 text-slate-900">See It In Action: How One Veteran Becomes a Six-Figure Client</h2>
-                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Follow Steve through your LeadsHook funnel—watch how qualification, trust-building, and verification transform a Facebook click into a ready-to-sign client.</p>
+                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Here's what happens when Steve clicks your ad.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">He thinks he's taking a quiz. By the time he's done, he's qualified himself, learned what he's owed, and decided to trust you. You just pick up the phone.</p>
             </div>
 
             <!-- Story Timeline -->
@@ -350,10 +340,10 @@
                 <!-- Stage 1: Traffic + Personalized Landing -->
                 <div class="relative bg-white rounded-2xl p-8 shadow-lg mb-8">
                     <!-- Timeline dot -->
-                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-blue-500"></div>
+                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-amber-500"></div>
 
                     <!-- Feature-Outcome Badge (hidden on mobile) -->
-                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-blue-700 to-blue-800 rounded-lg p-3 text-center shadow-lg">
+                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-navy to-dark rounded-lg p-3 text-center shadow-lg">
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Feature</div>
                         <div class="text-xs font-semibold text-slate-200 mb-2">Dynamic Personalisation</div>
                         <div class="text-amber-500 text-lg">&#8595;</div>
@@ -362,7 +352,7 @@
                     </div>
 
                     <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-blue-100 text-blue-700">Traffic</span>
+                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-navy">Traffic</span>
                         <h3 class="text-lg font-semibold text-slate-900">Dynamic personalisation: different ads, same funnel, personalised experience</h3>
                     </div>
 
@@ -377,7 +367,7 @@
                                 <span class="ml-4 text-xs text-slate-500 bg-slate-800 px-3 py-1 rounded">yourdomain.com.au/dva-assessment</span>
                             </div>
                             <div class="p-8 gradient-screen text-center">
-                                <div class="text-2xl font-bold text-slate-900 mb-2">Could You Be Entitled to DVA Compensation?</div>
+                                <div class="text-2xl font-bold text-slate-900 mb-2">Ex-Army? You May Be Owed $100K+</div>
                                 <div class="text-slate-500 mb-5">Take this 2-minute assessment to see what you may be owed for service-related conditions.</div>
                                 <div class="gradient-amber-warm p-10 rounded-lg mb-5 flex flex-col items-center gap-2">
                                     <span class="text-4xl">&#127894;</span>
@@ -386,7 +376,7 @@
                                 <button class="gradient-navy-olive text-white px-8 py-3 rounded-lg font-semibold">Check My Eligibility &#8594;</button>
                             </div>
                         </div>
-                        <div class="mt-4 p-3 gradient-blue-light rounded-lg border-l-4 border-blue-500 flex items-center gap-3 text-sm text-blue-800">
+                        <div class="mt-4 p-3 gradient-navy-light rounded-lg border-l-4 border-navy flex items-center gap-3 text-sm text-navy">
                             <span class="text-xl">&#9889;</span>
                             <span>This headline, image, and CTA change based on which ad Steve clicked</span>
                         </div>
@@ -396,10 +386,10 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
                             <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2">&#128214; The Story</div>
-                            <p class="text-slate-600 text-sm mb-3">Steve sees your Facebook ad: <em>"Ex-Army? You May Be Owed $100K+ in DVA Compensation."</em> He clicks. The landing page echoes that exact message.</p>
-                            <p class="text-slate-600 text-sm mb-4">Meanwhile, Dave clicks a different ad—<em>"PTSD from Service? Here's What DVA Owes You"</em>—and sees a completely different headline focused on mental health claims.</p>
+                            <p class="text-slate-600 text-sm mb-3">Steve sees your ad: <em>"Ex-Army? You May Be Owed $100K+"</em>. He clicks. The page echoes that exact message back to him.</p>
+                            <p class="text-slate-600 text-sm mb-4">Dave clicks a different ad about PTSD. He sees a completely different page. Same quiz underneath. Different door in.</p>
                             <div class="bg-amber-100 border-l-4 border-amber-500 p-3 rounded text-sm text-amber-800">
-                                <strong>Why this matters:</strong> Continuity from ad to landing page increases conversion by 30-50%. Each veteran sees a message that speaks directly to their situation.
+                                <strong>One funnel. Infinite angles.</strong> You test messaging without building new pages. The data tells you which angle produces clients.
                             </div>
                         </div>
                         <div class="p-6 gradient-dark-tech rounded-xl">
@@ -444,19 +434,19 @@
                                 <div class="text-xs text-slate-500">Army-focused assessment</div>
                             </div>
                             <div class="bg-white rounded-lg p-4 border border-slate-200 text-center">
-                                <div class="w-10 h-10 rounded-lg gradient-navy-blue flex items-center justify-center text-white text-lg mx-auto mb-2">&#9875;</div>
+                                <div class="w-10 h-10 rounded-lg bg-navy flex items-center justify-center text-white text-lg mx-auto mb-2">&#9875;</div>
                                 <div class="text-xs font-semibold text-slate-900 mb-1">"Navy Veterans: Check Eligibility"</div>
                                 <div class="text-slate-400">&#8595;</div>
                                 <div class="text-xs text-slate-500">Navy-focused assessment</div>
                             </div>
                             <div class="bg-white rounded-lg p-4 border border-slate-200 text-center">
-                                <div class="w-10 h-10 rounded-lg gradient-violet flex items-center justify-center text-white text-lg mx-auto mb-2">&#129504;</div>
+                                <div class="w-10 h-10 rounded-lg bg-olive flex items-center justify-center text-white text-lg mx-auto mb-2">&#129504;</div>
                                 <div class="text-xs font-semibold text-slate-900 mb-1">"PTSD from Service?"</div>
                                 <div class="text-slate-400">&#8595;</div>
                                 <div class="text-xs text-slate-500">Mental health focused</div>
                             </div>
                             <div class="bg-white rounded-lg p-4 border border-slate-200 text-center">
-                                <div class="w-10 h-10 rounded-lg gradient-orange-red flex items-center justify-center text-white text-lg mx-auto mb-2">&#129656;</div>
+                                <div class="w-10 h-10 rounded-lg gradient-amber flex items-center justify-center text-white text-lg mx-auto mb-2">&#129656;</div>
                                 <div class="text-xs font-semibold text-slate-900 mb-1">"Injured During Service?"</div>
                                 <div class="text-slate-400">&#8595;</div>
                                 <div class="text-xs text-slate-500">Physical injury focused</div>
@@ -470,9 +460,9 @@
 
                 <!-- Stage 2: Assessment -->
                 <div class="relative bg-white rounded-2xl p-8 shadow-lg mb-8">
-                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-violet-500"></div>
+                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-amber-500"></div>
 
-                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-violet-600 to-violet-800 rounded-lg p-3 text-center shadow-lg">
+                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-navy to-dark rounded-lg p-3 text-center shadow-lg">
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Feature</div>
                         <div class="text-xs font-semibold text-slate-200 mb-2">Decision Trees + Calculators</div>
                         <div class="text-amber-500 text-lg">&#8595;</div>
@@ -481,7 +471,7 @@
                     </div>
 
                     <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-violet-100 text-violet-700">Assessment</span>
+                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-navy">Assessment</span>
                         <h3 class="text-lg font-semibold text-slate-900">Value-first questions capture data while building trust</h3>
                     </div>
 
@@ -491,7 +481,7 @@
                         <div class="flex flex-col md:flex-row items-stretch gap-4">
                             <!-- Step 1 -->
                             <div class="flex-1 bg-slate-50 rounded-xl p-6 border-2 border-slate-200">
-                                <div class="inline-block bg-violet-500 text-white text-xs font-bold px-3 py-1 rounded mb-3">Step 1</div>
+                                <div class="inline-block bg-navy text-white text-xs font-bold px-3 py-1 rounded mb-3">Step 1</div>
                                 <div class="text-sm text-slate-500 mb-3">&#127894; Let's check your service eligibility</div>
                                 <div class="mb-3">
                                     <label class="block text-xs text-slate-600 mb-1">Which branch did you serve in?</label>
@@ -505,7 +495,7 @@
                                         <option>2014</option>
                                     </select>
                                 </div>
-                                <button class="w-full bg-violet-500 text-white py-2 rounded font-semibold text-sm">Continue &#8594;</button>
+                                <button class="w-full bg-navy text-white py-2 rounded font-semibold text-sm">Continue &#8594;</button>
                             </div>
 
                             <!-- Connector -->
@@ -517,7 +507,7 @@
 
                             <!-- Step 2 -->
                             <div class="flex-1 bg-slate-50 rounded-xl p-6 border-2 border-slate-200">
-                                <div class="inline-block bg-violet-500 text-white text-xs font-bold px-3 py-1 rounded mb-3">Step 2</div>
+                                <div class="inline-block bg-navy text-white text-xs font-bold px-3 py-1 rounded mb-3">Step 2</div>
                                 <div class="text-sm text-emerald-600 mb-3 font-semibold">&#9989; <strong>You're eligible!</strong> Now let's see what you may be entitled to.</div>
                                 <div class="mb-3">
                                     <label class="block text-xs text-slate-600 mb-1">Select any conditions you experience:</label>
@@ -526,7 +516,7 @@
                                         &#9745; Hearing issues &nbsp; &#9745; Anxiety/PTSD
                                     </div>
                                 </div>
-                                <button class="w-full bg-violet-500 text-white py-2 rounded font-semibold text-sm">Calculate My Entitlement &#8594;</button>
+                                <button class="w-full bg-navy text-white py-2 rounded font-semibold text-sm">Calculate My Entitlement &#8594;</button>
                             </div>
                         </div>
                         <div class="mt-4 p-3 gradient-green-light rounded-lg border-l-4 border-emerald-500 flex items-center gap-3 text-sm text-green-800">
@@ -539,10 +529,10 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
                             <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2">&#128214; The Story</div>
-                            <p class="text-slate-600 text-sm mb-3">Steve answers 5 simple questions. He doesn't realise he's being qualified—he thinks he's getting a free assessment.</p>
-                            <p class="text-slate-600 text-sm mb-4">By the time he sees the results, you know everything you need: service dates, branch, discharge year, conditions, and whether he's already claimed anything.</p>
+                            <p class="text-slate-600 text-sm mb-3">Steve answers 5 questions. He thinks he's checking his eligibility. He is—but so are you.</p>
+                            <p class="text-slate-600 text-sm mb-4">By the time he finishes, you know: service dates, branch, discharge year, conditions, existing claims. No phone call required.</p>
                             <div class="bg-emerald-100 border-l-4 border-emerald-500 p-3 rounded text-sm text-green-800">
-                                <strong>The shift:</strong> Instead of qualifying on the call, you qualify BEFORE the call. Every consultation is with someone you already know is eligible and ready.
+                                <strong>The intake call happens before the call.</strong> When you pick up the phone, you already know who you're talking to.
                             </div>
                         </div>
                         <div class="p-6 gradient-dark-tech rounded-xl">
@@ -574,7 +564,7 @@
                     </div>
 
                     <!-- Expand: Data Captured -->
-                    <div class="border-2 border-indigo-200 rounded-xl p-6">
+                    <div class="border-2 border-slate-300 rounded-xl p-6">
                         <div class="flex items-center gap-2 font-semibold text-slate-900 mb-4">
                             <span>&#128203;</span>
                             <span>Data Captured Before You See Any Contact Details</span>
@@ -611,16 +601,16 @@
                 <div class="relative bg-white rounded-2xl p-8 shadow-lg mb-8">
                     <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-amber-500"></div>
 
-                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-amber-600 to-amber-800 rounded-lg p-3 text-center shadow-lg">
+                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-navy to-dark rounded-lg p-3 text-center shadow-lg">
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Feature</div>
                         <div class="text-xs font-semibold text-slate-200 mb-2">Lead Scoring & Routing</div>
-                        <div class="text-amber-300 text-lg">&#8595;</div>
+                        <div class="text-amber-500 text-lg">&#8595;</div>
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Outcome</div>
                         <div class="text-sm font-bold text-emerald-400 leading-tight">High-value clients prioritised<br>Tyre-kickers filtered</div>
                     </div>
 
                     <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-100 text-amber-700">Qualification</span>
+                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-navy">Qualification</span>
                         <h3 class="text-lg font-semibold text-slate-900">Smart scoring: separate six-figure clients from tyre-kickers before you call</h3>
                     </div>
 
@@ -686,11 +676,11 @@
                                         </div>
                                     </div>
                                 </div>
-                                <button class="w-full mt-4 bg-amber-500 text-white py-3 rounded-lg font-semibold">Get My Free Consultation &#8594;</button>
+                                <button class="w-full mt-4 bg-navy text-white py-3 rounded-lg font-semibold">Get My Free Consultation &#8594;</button>
                             </div>
                         </div>
 
-                        <div class="mt-4 p-3 gradient-amber-warm rounded-lg border-l-4 border-amber-500 flex items-center gap-3 text-sm text-amber-800">
+                        <div class="mt-4 p-3 gradient-green-light rounded-lg border-l-4 border-emerald-500 flex items-center gap-3 text-sm text-green-800">
                             <span class="text-xl">&#127919;</span>
                             <span>Each answer adds to lead score. Only high-scoring leads get immediate callback. Others go to nurture.</span>
                         </div>
@@ -700,10 +690,10 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
                             <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2">&#128214; The Story</div>
-                            <p class="text-slate-600 text-sm mb-3">Steve sees his estimated entitlement: <strong>$80,000 - $150,000</strong>. The number feels credible because it came from his actual service history and conditions.</p>
-                            <p class="text-slate-600 text-sm mb-4">He's now emotionally invested. The final questions feel natural—he's already this far, why not complete it?</p>
-                            <div class="bg-amber-100 border-l-4 border-amber-500 p-3 rounded text-sm text-amber-800">
-                                <strong>The psychology:</strong> By the time Steve reaches these questions, he's spent 2-3 minutes engaging with your tool. He's seen his potential entitlement. Completing the form feels like the natural next step—not a sales pitch.
+                            <p class="text-slate-600 text-sm mb-3">Steve sees his number: <strong>$80,000 - $150,000</strong>. It's not a guess—it came from his answers. He believes it.</p>
+                            <p class="text-slate-600 text-sm mb-4">Three more questions. He barely notices. He's already invested. Finishing feels obvious.</p>
+                            <div class="bg-emerald-100 border-l-4 border-emerald-500 p-3 rounded text-sm text-green-800">
+                                <strong>He's not being sold. He's being scored.</strong> "ASAP" + "comfortable with paid advocate" = hot lead. "Just researching" + "not sure about fees" = nurture sequence.
                             </div>
                         </div>
                         <div class="p-6 gradient-dark-tech rounded-xl">
@@ -735,7 +725,7 @@
                     </div>
 
                     <!-- Expand: Scoring Breakdown -->
-                    <div class="border-2 border-amber-300 rounded-xl p-6 gradient-amber-light">
+                    <div class="border-2 border-slate-300 rounded-xl p-6">
                         <div class="flex items-center gap-2 font-semibold text-slate-900 mb-4">
                             <span>&#128200;</span>
                             <span>How Steve's Lead Score Was Calculated</span>
@@ -743,28 +733,28 @@
                         <div class="space-y-3 mb-6">
                             <div class="flex items-center justify-between bg-white p-3 rounded-lg">
                                 <div class="flex items-center gap-3">
-                                    <span class="w-8 h-8 rounded bg-blue-100 text-blue-600 flex items-center justify-center">&#127894;</span>
+                                    <span class="w-8 h-8 rounded bg-slate-100 text-navy flex items-center justify-center">&#127894;</span>
                                     <span class="text-sm">Eligible veteran (Army, 2014)</span>
                                 </div>
                                 <span class="text-emerald-600 font-semibold">+20 pts</span>
                             </div>
                             <div class="flex items-center justify-between bg-white p-3 rounded-lg">
                                 <div class="flex items-center gap-3">
-                                    <span class="w-8 h-8 rounded bg-emerald-100 text-emerald-600 flex items-center justify-center">&#129656;</span>
+                                    <span class="w-8 h-8 rounded bg-slate-100 text-navy flex items-center justify-center">&#129656;</span>
                                     <span class="text-sm">5+ conditions identified</span>
                                 </div>
                                 <span class="text-emerald-600 font-semibold">+25 pts</span>
                             </div>
                             <div class="flex items-center justify-between bg-white p-3 rounded-lg">
                                 <div class="flex items-center gap-3">
-                                    <span class="w-8 h-8 rounded bg-amber-100 text-amber-600 flex items-center justify-center">&#128203;</span>
+                                    <span class="w-8 h-8 rounded bg-slate-100 text-navy flex items-center justify-center">&#128203;</span>
                                     <span class="text-sm">No existing claims (fresh case)</span>
                                 </div>
                                 <span class="text-emerald-600 font-semibold">+25 pts</span>
                             </div>
                             <div class="flex items-center justify-between bg-white p-3 rounded-lg">
                                 <div class="flex items-center gap-3">
-                                    <span class="w-8 h-8 rounded bg-red-100 text-red-600 flex items-center justify-center">&#128337;</span>
+                                    <span class="w-8 h-8 rounded bg-slate-100 text-navy flex items-center justify-center">&#128337;</span>
                                     <span class="text-sm">Timeline: ASAP</span>
                                 </div>
                                 <span class="text-emerald-600 font-semibold">+30 pts</span>
@@ -796,18 +786,18 @@
 
                 <!-- Stage 4: Verification -->
                 <div class="relative bg-white rounded-2xl p-8 shadow-lg mb-8">
-                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-emerald-500"></div>
+                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-amber-500"></div>
 
-                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-emerald-600 to-emerald-800 rounded-lg p-3 text-center shadow-lg">
+                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-navy to-dark rounded-lg p-3 text-center shadow-lg">
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Feature</div>
                         <div class="text-xs font-semibold text-slate-200 mb-2">Phone Verification</div>
                         <div class="text-amber-500 text-lg">&#8595;</div>
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Outcome</div>
-                        <div class="text-sm font-bold text-emerald-300 leading-tight">100% reachable leads<br>Zero wasted calls</div>
+                        <div class="text-sm font-bold text-emerald-400 leading-tight">100% reachable leads<br>Zero wasted calls</div>
                     </div>
 
                     <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-emerald-100 text-emerald-700">Verification</span>
+                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-navy">Verification</span>
                         <h3 class="text-lg font-semibold text-slate-900">Phone verification: every lead you call actually answers</h3>
                     </div>
 
@@ -818,7 +808,7 @@
                         <div class="space-y-4">
                             <!-- Step 1: Contact Fields -->
                             <div class="bg-slate-50 rounded-xl p-6 border-2 border-slate-200">
-                                <div class="inline-block bg-emerald-500 text-white text-xs font-bold px-3 py-1 rounded mb-4">Step 1</div>
+                                <div class="inline-block bg-navy text-white text-xs font-bold px-3 py-1 rounded mb-4">Step 1</div>
                                 <div class="grid md:grid-cols-2 gap-6">
                                     <div class="bg-emerald-50 p-4 rounded-lg border border-emerald-200">
                                         <div class="font-semibold text-emerald-800 mb-2">&#128203; Your Personalised Report Includes:</div>
@@ -838,7 +828,7 @@
                                             <label class="block text-xs text-slate-600 mb-1">Best number to text your report?</label>
                                             <input type="tel" value="0412 345 678" readonly class="w-full p-2 border border-slate-300 rounded bg-white text-sm">
                                         </div>
-                                        <button class="w-full bg-emerald-500 text-white py-2 rounded font-semibold text-sm">Send My Report &#8594;</button>
+                                        <button class="w-full bg-navy text-white py-2 rounded font-semibold text-sm">Send My Report &#8594;</button>
                                     </div>
                                 </div>
                             </div>
@@ -855,8 +845,8 @@
                             </div>
 
                             <!-- Step 2: Code Entry -->
-                            <div class="bg-slate-50 rounded-xl p-6 border-2 border-amber-300">
-                                <div class="inline-block bg-amber-500 text-white text-xs font-bold px-3 py-1 rounded mb-4">Step 2</div>
+                            <div class="bg-slate-50 rounded-xl p-6 border-2 border-slate-200">
+                                <div class="inline-block bg-navy text-white text-xs font-bold px-3 py-1 rounded mb-4">Step 2</div>
                                 <div class="grid md:grid-cols-2 gap-6 items-center">
                                     <div class="flex items-center gap-3">
                                         <span class="text-2xl">&#9989;</span>
@@ -872,7 +862,7 @@
                                             <input type="text" value="9" readonly class="w-10 h-12 text-center border-2 border-slate-300 rounded-lg text-xl font-bold">
                                             <input type="text" value="4" readonly class="w-10 h-12 text-center border-2 border-slate-300 rounded-lg text-xl font-bold">
                                         </div>
-                                        <button class="bg-emerald-500 text-white px-4 py-2 rounded font-semibold text-sm">Get My Report &#8594;</button>
+                                        <button class="bg-navy text-white px-4 py-2 rounded font-semibold text-sm">Get My Report &#8594;</button>
                                     </div>
                                 </div>
                             </div>
@@ -888,10 +878,10 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
                             <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2">&#128214; The Story</div>
-                            <p class="text-slate-600 text-sm mb-3">Steve enters his phone number. SMS arrives in 3 seconds. He enters the code. Done.</p>
-                            <p class="text-slate-600 text-sm mb-4"><strong>Critical framing:</strong> The code is positioned as "receive your report," not "verify your identity." He's getting something, not being checked.</p>
+                            <p class="text-slate-600 text-sm mb-3">Steve enters his number. SMS arrives. He types the code. Done.</p>
+                            <p class="text-slate-600 text-sm mb-4">He thinks he's unlocking his report. He is—but he's also proving his number is real.</p>
                             <div class="bg-emerald-100 border-l-4 border-emerald-500 p-3 rounded text-sm text-green-800">
-                                <strong>The result:</strong> 30-40% of unverified leads have fake numbers. With verification, 100% of leads you call will answer. Zero wasted dials.
+                                <strong>No more 0400 000 000.</strong> Every lead you call will actually answer. Zero wasted dials.
                             </div>
                         </div>
                         <div class="p-6 gradient-dark-tech rounded-xl">
@@ -923,7 +913,7 @@
                     </div>
 
                     <!-- Expand: Verified vs Unverified -->
-                    <div class="border-2 border-emerald-300 rounded-xl p-6">
+                    <div class="border-2 border-slate-300 rounded-xl p-6">
                         <div class="flex items-center gap-2 font-semibold text-slate-900 mb-4">
                             <span>&#128176;</span>
                             <span>Why Verification Changes Everything</span>
@@ -955,9 +945,9 @@
 
                 <!-- Stage 5: Delivery -->
                 <div class="relative bg-white rounded-2xl p-8 shadow-lg mb-8">
-                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-red-500"></div>
+                    <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-amber-500"></div>
 
-                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-red-600 to-red-800 rounded-lg p-3 text-center shadow-lg">
+                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-navy to-dark rounded-lg p-3 text-center shadow-lg">
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Feature</div>
                         <div class="text-xs font-semibold text-slate-200 mb-2">Real-Time Delivery</div>
                         <div class="text-amber-500 text-lg">&#8595;</div>
@@ -966,7 +956,7 @@
                     </div>
 
                     <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-red-100 text-red-700">Delivery</span>
+                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-navy">Delivery</span>
                         <h3 class="text-lg font-semibold text-slate-900">Instant delivery = call while they're still engaged</h3>
                     </div>
 
@@ -1009,7 +999,7 @@
                             </div>
                         </div>
 
-                        <div class="mt-4 p-3 gradient-red-light rounded-lg border-l-4 border-red-500 flex items-center gap-3 text-sm text-red-800">
+                        <div class="mt-4 p-3 gradient-amber-warm rounded-lg border-l-4 border-amber-500 flex items-center gap-3 text-sm text-amber-800">
                             <span class="text-xl">&#9888;</span>
                             <span>Wait an hour? Steve's back to work, kids are home, moment is gone. <strong>Speed to call = conversion rate.</strong></span>
                         </div>
@@ -1019,10 +1009,10 @@
                     <div class="grid md:grid-cols-2 gap-6 mb-8">
                         <div class="p-6 bg-slate-50 rounded-xl border border-slate-200">
                             <div class="text-xs font-semibold uppercase tracking-wider text-slate-500 mb-4 flex items-center gap-2">&#128214; The Story</div>
-                            <p class="text-slate-600 text-sm mb-3">Steve finishes the assessment, sees his entitlement estimate, and is feeling hopeful. His phone buzzes—it's you.</p>
-                            <p class="text-slate-600 text-sm mb-4">"Hi Steve, this is Chris from Military Claims. I just saw you completed our DVA assessment—looks like you could be entitled to quite a bit. Do you have a few minutes to chat?"</p>
+                            <p class="text-slate-600 text-sm mb-3">Steve finishes. He's still looking at his results. His phone rings. It's you.</p>
+                            <p class="text-slate-600 text-sm mb-4">"Hi Steve, I just saw your assessment come through—looks like you could be entitled to quite a bit. Got a few minutes?"</p>
                             <div class="bg-emerald-100 border-l-4 border-emerald-500 p-3 rounded text-sm text-green-800">
-                                <strong>The difference:</strong> Call within 5 minutes = 400% higher contact rate than calling after 30 minutes. Real-time delivery makes this possible.
+                                <strong>Call in 5 minutes = 400% higher contact rate.</strong> Wait an hour and the moment's gone. Speed is the game.
                             </div>
                         </div>
                         <div class="p-6 gradient-dark-tech rounded-xl">
@@ -1054,7 +1044,7 @@
                     </div>
 
                     <!-- Expand: Lead Package -->
-                    <div class="border-2 border-red-300 rounded-xl p-6">
+                    <div class="border-2 border-slate-300 rounded-xl p-6">
                         <div class="flex items-center gap-2 font-semibold text-slate-900 mb-4">
                             <span>&#128230;</span>
                             <span>Complete Lead Package You Receive</span>
@@ -1095,19 +1085,19 @@
                 </div>
 
                 <!-- Stage 6: Intelligence -->
-                <div class="relative bg-gradient-to-br from-amber-50 to-amber-100 border-2 border-amber-400 rounded-2xl p-8 shadow-lg mb-8">
+                <div class="relative bg-white rounded-2xl p-8 shadow-lg mb-8">
                     <div class="absolute -left-7 md:-left-8 top-10 w-4 h-4 rounded-full bg-white border-4 border-amber-500"></div>
 
-                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-amber-600 to-amber-800 rounded-lg p-3 text-center shadow-lg">
+                    <div class="hidden xl:block absolute -left-36 top-20 w-28 bg-gradient-to-b from-navy to-dark rounded-lg p-3 text-center shadow-lg">
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Feature</div>
                         <div class="text-xs font-semibold text-slate-200 mb-2">Server-Side Tracking</div>
-                        <div class="text-amber-300 text-lg">&#8595;</div>
+                        <div class="text-amber-500 text-lg">&#8595;</div>
                         <div class="text-[10px] uppercase tracking-wider text-slate-400 mb-1">Outcome</div>
                         <div class="text-sm font-bold text-emerald-400 leading-tight">Know which ads produce clients<br>Not just leads</div>
                     </div>
 
                     <div class="flex flex-wrap items-center gap-4 mb-6">
-                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-amber-200 text-amber-800">Intelligence</span>
+                        <span class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider bg-slate-100 text-navy">Intelligence</span>
                         <h3 class="text-lg font-semibold text-slate-900">The flywheel: every client makes your next campaign smarter</h3>
                     </div>
 
@@ -1117,34 +1107,34 @@
 
                         <div class="bg-white p-6 rounded-xl mb-4">
                             <div class="font-semibold text-slate-700 mb-4">&#9889; The Attribution Flywheel</div>
-                            <div class="flex flex-wrap items-center justify-center gap-2 md:gap-4">
-                                <div class="bg-slate-50 p-3 rounded-lg text-center min-w-[120px]">
-                                    <span class="w-8 h-8 rounded-full bg-blue-500 text-white inline-flex items-center justify-center mb-1">1</span>
+                            <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
+                                <div class="bg-slate-50 p-4 rounded-lg text-center relative">
+                                    <span class="w-8 h-8 rounded-full bg-navy text-white inline-flex items-center justify-center mb-2">1</span>
                                     <div class="text-sm font-semibold">Steve signs</div>
                                     <div class="text-xs text-slate-500">You mark him as "converted"</div>
+                                    <span class="hidden md:block absolute top-1/2 -right-3 text-slate-400">&#8594;</span>
                                 </div>
-                                <span class="text-slate-400">&#8594;</span>
-                                <div class="bg-slate-50 p-3 rounded-lg text-center min-w-[120px]">
-                                    <span class="w-8 h-8 rounded-full bg-violet-500 text-white inline-flex items-center justify-center mb-1">2</span>
+                                <div class="bg-slate-50 p-4 rounded-lg text-center relative">
+                                    <span class="w-8 h-8 rounded-full bg-navy text-white inline-flex items-center justify-center mb-2">2</span>
                                     <div class="text-sm font-semibold">Data feeds back</div>
                                     <div class="text-xs text-slate-500">Facebook learns "Ex-Army" works</div>
+                                    <span class="hidden md:block absolute top-1/2 -right-3 text-slate-400">&#8594;</span>
                                 </div>
-                                <span class="text-slate-400">&#8594;</span>
-                                <div class="bg-slate-50 p-3 rounded-lg text-center min-w-[120px]">
-                                    <span class="w-8 h-8 rounded-full bg-amber-500 text-white inline-flex items-center justify-center mb-1">3</span>
+                                <div class="bg-slate-50 p-4 rounded-lg text-center relative">
+                                    <span class="w-8 h-8 rounded-full bg-navy text-white inline-flex items-center justify-center mb-2">3</span>
                                     <div class="text-sm font-semibold">Better targeting</div>
                                     <div class="text-xs text-slate-500">Ads shown to more veterans like Steve</div>
+                                    <span class="hidden md:block absolute top-1/2 -right-3 text-slate-400">&#8594;</span>
                                 </div>
-                                <span class="text-slate-400">&#8594;</span>
-                                <div class="bg-emerald-100 p-3 rounded-lg text-center min-w-[120px] border-2 border-emerald-400">
-                                    <span class="w-8 h-8 rounded-full bg-emerald-500 text-white inline-flex items-center justify-center mb-1">4</span>
+                                <div class="bg-emerald-100 p-4 rounded-lg text-center border-2 border-emerald-400">
+                                    <span class="w-8 h-8 rounded-full bg-emerald-500 text-white inline-flex items-center justify-center mb-2">4</span>
                                     <div class="text-sm font-semibold text-emerald-700">Lower cost per client</div>
                                     <div class="text-xs text-emerald-600">Same budget, more signed clients</div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="p-3 gradient-amber-warm rounded-lg border-l-4 border-amber-500 flex items-center gap-3 text-sm text-amber-800">
+                        <div class="p-3 gradient-green-light rounded-lg border-l-4 border-emerald-500 flex items-center gap-3 text-sm text-green-800">
                             <span class="text-xl">&#128161;</span>
                             <span>After 50 clients, you'll know exactly which campaigns, headlines, and audiences produce six-figure cases.</span>
                         </div>
@@ -1187,7 +1177,7 @@
                     </div>
 
                     <!-- Expand: Campaign Performance -->
-                    <div class="border-2 border-amber-400 rounded-xl p-6 bg-gradient-to-br from-amber-50 to-yellow-100">
+                    <div class="border-2 border-slate-300 rounded-xl p-6">
                         <div class="flex items-center gap-2 font-semibold text-slate-900 mb-4">
                             <span>&#128200;</span>
                             <span>Campaign Performance Data (After 3 Months)</span>
@@ -1276,41 +1266,33 @@
                     </div>
                 </div>
             </div>
+            <!-- End Timeline -->
+        </div>
 
             <!-- Final Journey Insight -->
-            <div class="bg-white rounded-2xl p-8 shadow-lg border-2 border-slate-200">
-                <div class="flex items-center gap-3 mb-6">
-                    <span class="text-3xl">&#128161;</span>
-                    <h3 class="text-xl font-semibold">The Bottom Line</h3>
-                </div>
-                <div class="grid md:grid-cols-3 gap-4 items-center mb-6">
-                    <div class="bg-red-50 p-4 rounded-lg text-center border border-red-200">
-                        <span class="text-2xl">&#128100;</span>
-                        <div class="font-semibold text-slate-800">Contact Form</div>
-                        <div class="text-sm text-slate-500">Unqualified, unverified, unknown source</div>
-                        <div class="text-red-600 font-bold mt-2">60%+ waste</div>
+            <div class="gradient-navy-olive rounded-3xl p-10 md:p-12 text-white text-center max-w-5xl mx-auto">
+                <h3 class="text-2xl md:text-3xl font-semibold mb-4">Get Results Without the Grind</h3>
+                <p class="text-white/80 text-lg mb-8 max-w-2xl mx-auto">While your competitors chase cold leads and burn hours on unqualified calls, you'll have a system that does the heavy lifting—qualification, verification, and scoring—before you even pick up the phone.</p>
+
+                <div class="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-12 mb-10">
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">&#128164;</div>
+                        <div class="text-amber-400 font-semibold">They grind</div>
+                        <div class="text-white/60 text-sm">Chasing every lead manually</div>
                     </div>
-                    <div class="text-center text-slate-400">
-                        <div class="text-xs">same veteran</div>
-                        <div class="text-2xl">&#8594;</div>
-                        <div class="text-xs">same ad spend</div>
-                    </div>
-                    <div class="bg-emerald-50 p-4 rounded-lg text-center border-2 border-emerald-400">
-                        <span class="text-2xl">&#127942;</span>
-                        <div class="font-semibold text-slate-800">LeadsHook Funnel</div>
-                        <div class="text-sm text-slate-500">Qualified, verified, full attribution</div>
-                        <div class="text-emerald-600 font-bold mt-2">Ready to sign</div>
+
+                    <div class="text-white/40 text-2xl hidden md:block">vs</div>
+                    <div class="text-white/40 text-xl md:hidden">vs</div>
+
+                    <div class="text-center">
+                        <div class="text-4xl mb-2">&#9889;</div>
+                        <div class="text-emerald-400 font-semibold">You scale</div>
+                        <div class="text-white/60 text-sm">Only talking to ready clients</div>
                     </div>
                 </div>
-                <div class="flex flex-wrap items-center justify-center gap-4 mb-6 text-lg">
-                    <span class="bg-slate-100 px-4 py-2 rounded">Same ad spend</span>
-                    <span class="text-slate-400">+</span>
-                    <span class="bg-amber-100 px-4 py-2 rounded font-semibold text-amber-800">Better qualification</span>
-                    <span class="text-slate-400">=</span>
-                    <span class="bg-emerald-100 px-4 py-2 rounded font-semibold text-emerald-800">2-3x more clients</span>
-                </div>
-                <p class="text-center text-slate-600">
-                    <strong>That's what LeadsHook delivers.</strong> Not more leads. Better leads. Veterans who are qualified, verified, and ready to work with you.
+
+                <p class="text-xl text-white/90 max-w-2xl mx-auto">
+                    Let them wonder how you're signing more clients with less effort. <span class="text-amber-400 font-semibold">That's your edge.</span>
                 </p>
             </div>
         </div>
@@ -1320,17 +1302,17 @@
     <section class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4 text-slate-900">The Data Flywheel: Performance That Compounds</h2>
-                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Traditional lead gen is flat. LeadsHook creates a compounding advantage that grows stronger every month.</p>
+                <h2 class="text-3xl font-semibold mb-4 text-slate-900">The longer you run it, the cheaper your leads get.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Most lead gen is a treadmill—same cost forever. This is a flywheel. Every signed client teaches the algorithm where to find more like them.</p>
             </div>
 
             <!-- Challenge/Solution Layout -->
             <div class="grid md:grid-cols-2 gap-8 mb-12">
                 <div class="bg-red-50 rounded-2xl p-8 border border-red-200">
                     <h3 class="text-red-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128308;</span> Traditional Lead Gen
+                        <span>&#128308;</span> The treadmill
                     </h3>
-                    <p class="text-slate-600 mb-4">Month 1 performance = Month 12 performance. No learning. No improvement. Same cost per client forever.</p>
+                    <p class="text-slate-600 mb-4">Month 1 = Month 12. No learning. No improvement. Same cost per client forever.</p>
                     <div class="flex items-center justify-center gap-4 py-6">
                         <div class="text-center">
                             <div class="text-2xl font-bold text-red-600">$200</div>
@@ -1351,9 +1333,9 @@
                 </div>
                 <div class="bg-emerald-50 rounded-2xl p-8 border-2 border-emerald-400">
                     <h3 class="text-emerald-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128994;</span> LeadsHook Flywheel
+                        <span>&#128994;</span> The flywheel
                     </h3>
-                    <p class="text-slate-600 mb-4">Every signed client teaches the algorithm. Every month, your cost per client drops. Compounding advantage.</p>
+                    <p class="text-slate-600 mb-4">Every signed client teaches the algorithm. Every month, your cost drops. The gap widens.</p>
                     <div class="flex items-center justify-center gap-4 py-6">
                         <div class="text-center">
                             <div class="text-2xl font-bold text-slate-600">$200</div>
@@ -1361,7 +1343,7 @@
                         </div>
                         <span class="text-slate-400">→</span>
                         <div class="text-center">
-                            <div class="text-2xl font-bold text-amber-600">$150</div>
+                            <div class="text-2xl font-bold text-emerald-400">$150</div>
                             <div class="text-xs text-slate-500">Month 6</div>
                         </div>
                         <span class="text-slate-400">→</span>
@@ -1375,7 +1357,7 @@
             </div>
 
             <!-- 12-Month Timeline -->
-            <div class="bg-gradient-to-r from-slate-50 to-emerald-50 rounded-2xl p-8 border border-slate-200">
+            <div class="bg-slate-50 rounded-2xl p-8 border border-slate-200">
                 <h4 class="font-semibold text-slate-900 mb-6 text-center">Your Cost Per Signed Client Over 12 Months</h4>
                 <div class="grid grid-cols-2 md:grid-cols-4 gap-4">
                     <div class="bg-white rounded-xl p-6 text-center shadow-sm">
@@ -1385,12 +1367,12 @@
                     </div>
                     <div class="bg-white rounded-xl p-6 text-center shadow-sm">
                         <div class="text-sm text-slate-500 mb-2">Month 3</div>
-                        <div class="text-3xl font-bold text-amber-600">$170</div>
+                        <div class="text-3xl font-bold text-emerald-400">$170</div>
                         <div class="text-xs text-emerald-500 mt-2">-15%</div>
                     </div>
                     <div class="bg-white rounded-xl p-6 text-center shadow-sm">
                         <div class="text-sm text-slate-500 mb-2">Month 6</div>
-                        <div class="text-3xl font-bold text-amber-500">$150</div>
+                        <div class="text-3xl font-bold text-emerald-500">$150</div>
                         <div class="text-xs text-emerald-500 mt-2">-25%</div>
                     </div>
                     <div class="bg-emerald-100 rounded-xl p-6 text-center shadow-sm border-2 border-emerald-400">
@@ -1399,12 +1381,12 @@
                         <div class="text-xs text-emerald-600 font-semibold mt-2">-45%</div>
                     </div>
                 </div>
-                <div class="mt-6 p-4 bg-amber-100 rounded-lg border-l-4 border-amber-500">
+                <div class="mt-6 p-4 bg-emerald-100 rounded-lg border-l-4 border-emerald-500">
                     <div class="flex items-center gap-3">
                         <span class="text-2xl">&#128161;</span>
                         <div>
-                            <strong class="text-amber-800">Key Insight:</strong>
-                            <span class="text-amber-700"> At 10 clients/month, a 45% cost reduction = $900/month saved. That's $10,800/year in pure profit from the same ad spend.</span>
+                            <strong class="text-emerald-800">Key Insight:</strong>
+                            <span class="text-emerald-700"> At 10 clients/month, a 45% cost reduction = $900/month saved. That's $10,800/year in pure profit from the same ad spend.</span>
                         </div>
                     </div>
                 </div>
@@ -1416,15 +1398,15 @@
     <section class="py-20 bg-gray-50">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Competitor-Proof Infrastructure</h2>
-                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Other advocates can copy your ads. They can't copy your funnel intelligence.</p>
+                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Let them copy your landing page.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">They'll screenshot it. Steal your headlines. Run the same ads. And still lose. Because the thing that works isn't visible.</p>
             </div>
 
             <div class="grid md:grid-cols-2 gap-8 mb-8">
                 <!-- Left: Advantages List -->
                 <div class="bg-white rounded-2xl p-8 shadow-lg">
                     <h3 class="font-semibold text-slate-900 mb-6 flex items-center gap-2">
-                        <span class="text-2xl">&#128274;</span> Unfunnel-Hackable Advantages
+                        <span class="text-2xl">&#128274;</span> What they can't copy
                     </h3>
                     <ul class="space-y-4">
                         <li class="flex items-start gap-3">
@@ -1490,12 +1472,12 @@
             </div>
 
             <!-- Moat Callout -->
-            <div class="bg-gradient-to-r from-amber-100 to-yellow-100 rounded-2xl p-8 border-2 border-amber-400">
+            <div class="bg-emerald-50 rounded-2xl p-8 border-2 border-emerald-400">
                 <div class="flex items-start gap-4">
                     <span class="text-4xl">&#127942;</span>
                     <div>
-                        <h4 class="font-bold text-amber-900 text-lg mb-2">The Competitive Moat</h4>
-                        <p class="text-amber-800">A competitor can screenshot your landing page. They can copy your headlines. But they can't copy your decision trees, your scoring logic, your verification flow, or your 6 months of conversion data feeding Facebook's algorithm. <strong>By the time they catch up, you're another 6 months ahead.</strong></p>
+                        <h4 class="font-bold text-emerald-800 text-lg mb-2">The Competitive Moat</h4>
+                        <p class="text-emerald-700">A competitor can screenshot your landing page. They can copy your headlines. But they can't copy your decision trees, your scoring logic, your verification flow, or your 6 months of conversion data feeding Facebook's algorithm. <strong>By the time they catch up, you're another 6 months ahead.</strong></p>
                     </div>
                 </div>
             </div>
@@ -1506,8 +1488,8 @@
     <section class="py-20 bg-white">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Built for Scale</h2>
-                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Handle 10 leads or 1,000 leads with the same infrastructure.</p>
+                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Double your ad spend. Don't double your workload.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">The system handles 10 leads the same way it handles 1,000. You just pick up the phone.</p>
             </div>
 
             <!-- Volume Comparison -->
@@ -1520,10 +1502,10 @@
                         <div class="text-xs text-slate-400 mt-2">Before quality drops</div>
                     </div>
                     <div class="text-center">
-                        <div class="text-sm text-emerald-600 mb-2">With LeadsHook</div>
+                        <div class="text-sm text-emerald-600 mb-2">Automated</div>
                         <div class="text-5xl font-bold text-emerald-600">500+</div>
                         <div class="text-emerald-600">leads/day</div>
-                        <div class="text-xs text-emerald-500 mt-2">Same quality, fully automated</div>
+                        <div class="text-xs text-emerald-500 mt-2">Same quality, zero extra effort</div>
                     </div>
                 </div>
             </div>
@@ -1531,7 +1513,7 @@
             <!-- Two Cards -->
             <div class="grid md:grid-cols-2 gap-8">
                 <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-                    <div class="text-3xl mb-4">&#128202;</div>
+                    
                     <h4 class="font-semibold text-slate-900 text-lg mb-3">Your Data, Your Asset, Forever</h4>
                     <p class="text-slate-500 text-sm mb-4">Every lead captures zero-party data—information veterans willingly provide. This data belongs to you, not a platform.</p>
                     <ul class="space-y-2 text-sm text-slate-600">
@@ -1542,7 +1524,7 @@
                     </ul>
                 </div>
                 <div class="bg-white rounded-2xl p-8 shadow-lg border border-slate-200">
-                    <div class="text-3xl mb-4">&#9889;</div>
+                    
                     <h4 class="font-semibold text-slate-900 text-lg mb-3">Automation Built for Volume</h4>
                     <p class="text-slate-500 text-sm mb-4">Every step of the veteran journey runs automatically. Scale your ad spend without scaling your team.</p>
                     <ul class="space-y-2 text-sm text-slate-600">
@@ -1568,7 +1550,7 @@
                 <!-- Left: The Problem -->
                 <div class="bg-red-50 rounded-2xl p-8 border border-red-200">
                     <h3 class="text-red-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128308;</span> The Geographic Leakage Problem
+                        <span>&#128308;</span> Where your money vanishes
                     </h3>
                     <p class="text-slate-600 mb-4">You service NSW and QLD veterans. But your ads reach veterans everywhere—and you're paying for every click.</p>
                     <div class="bg-white rounded-lg p-4 mb-4">
@@ -1598,7 +1580,7 @@
                 <!-- Right: The Solution -->
                 <div class="bg-emerald-50 rounded-2xl p-8 border-2 border-emerald-400">
                     <h3 class="text-emerald-700 text-lg font-semibold mb-4 flex items-center gap-2">
-                        <span>&#128994;</span> LeadsHook Geographic Intelligence
+                        <span>&#128994;</span> How to stop the leak
                     </h3>
                     <p class="text-slate-600 mb-4">Capture state and postcode automatically. Route veterans to the right advocate—or filter them before they waste your time.</p>
                     <ul class="space-y-3 mb-4">
@@ -1638,8 +1620,8 @@
     <section class="py-20 gradient-dark text-white">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4">LeadsHook: Your Central Command</h2>
-                <p class="text-lg text-slate-400 max-w-2xl mx-auto">One platform connects your traffic sources to your CRM—with qualification, verification, and attribution built in.</p>
+                <h2 class="text-3xl font-semibold mb-4">One system. Everything connected.</h2>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">Traffic comes in. Qualified leads come out. Your CRM gets the data. Your ads get smarter. That's LeadsHook.</p>
             </div>
 
             <!-- Simple Flow Diagram -->
@@ -1654,7 +1636,7 @@
                     <div class="text-sm font-semibold">Google Ads</div>
                 </div>
                 <span class="text-slate-500 text-2xl">→</span>
-                <div class="bg-gradient-to-br from-amber-500 to-amber-600 rounded-lg p-6 text-center min-w-[180px] shadow-lg">
+                <div class="gradient-navy-olive rounded-lg p-6 text-center min-w-[180px] shadow-lg">
                     <div class="text-3xl mb-2">&#9889;</div>
                     <div class="font-bold">LeadsHook</div>
                     <div class="text-xs opacity-80">Qualify • Verify • Score</div>
@@ -1669,22 +1651,22 @@
             <!-- 4-Card Grid -->
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
                 <div class="bg-slate-800 rounded-xl p-6 text-center">
-                    <div class="w-12 h-12 rounded-full bg-blue-500/20 text-blue-400 flex items-center justify-center text-2xl mx-auto mb-4">&#128203;</div>
+                    <div class="w-12 h-12 rounded-full bg-slate-700 text-slate-300 flex items-center justify-center text-2xl mx-auto mb-4">&#128203;</div>
                     <h4 class="font-semibold mb-2">Decision Trees</h4>
                     <p class="text-sm text-slate-400">Branch logic based on answers. Non-veterans see different path. High-value cases prioritised.</p>
                 </div>
                 <div class="bg-slate-800 rounded-xl p-6 text-center">
-                    <div class="w-12 h-12 rounded-full bg-emerald-500/20 text-emerald-400 flex items-center justify-center text-2xl mx-auto mb-4">&#128274;</div>
+                    <div class="w-12 h-12 rounded-full bg-slate-700 text-slate-300 flex items-center justify-center text-2xl mx-auto mb-4">&#128274;</div>
                     <h4 class="font-semibold mb-2">Verification</h4>
                     <p class="text-sm text-slate-400">SMS code verification. 100% reachable leads. Consent timestamped for compliance.</p>
                 </div>
                 <div class="bg-slate-800 rounded-xl p-6 text-center">
-                    <div class="w-12 h-12 rounded-full bg-amber-500/20 text-amber-400 flex items-center justify-center text-2xl mx-auto mb-4">&#128200;</div>
+                    <div class="w-12 h-12 rounded-full bg-slate-700 text-slate-300 flex items-center justify-center text-2xl mx-auto mb-4">&#128200;</div>
                     <h4 class="font-semibold mb-2">Tracking</h4>
                     <p class="text-sm text-slate-400">Server-side events. Facebook CAPI. Google Conversions API. Full attribution.</p>
                 </div>
                 <div class="bg-slate-800 rounded-xl p-6 text-center">
-                    <div class="w-12 h-12 rounded-full bg-violet-500/20 text-violet-400 flex items-center justify-center text-2xl mx-auto mb-4">&#128257;</div>
+                    <div class="w-12 h-12 rounded-full bg-slate-700 text-slate-300 flex items-center justify-center text-2xl mx-auto mb-4">&#128257;</div>
                     <h4 class="font-semibold mb-2">Testing</h4>
                     <p class="text-sm text-slate-400">Server-side split testing. Test headlines, questions, flows. Statistical significance built in.</p>
                 </div>
@@ -1696,30 +1678,30 @@
     <section class="py-20 bg-slate-900 text-white">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4">The Math: Why LeadsHook Pays for Itself</h2>
-                <p class="text-lg text-slate-400 max-w-2xl mx-auto">You're already spending money on ads. Here's how LeadsHook makes that spend work harder.</p>
+                <h2 class="text-3xl font-semibold mb-4">The maths.</h2>
+                <p class="text-lg text-slate-400 max-w-2xl mx-auto">You're already spending money on ads. Here's what changes when you stop guessing.</p>
             </div>
 
             <div class="bg-slate-800 rounded-2xl p-8">
                 <div class="grid md:grid-cols-3 gap-8 mb-10">
-                    <div class="text-center">
+                    <div class="text-center bg-slate-700 rounded-xl p-6">
                         <div class="text-sm text-slate-400 mb-2">Current Consultation Rate</div>
                         <div class="text-5xl font-bold text-amber-400 mb-2">40%</div>
                         <div class="text-sm text-slate-500">Of leads become consultations</div>
                     </div>
-                    <div class="text-center">
+                    <div class="text-center bg-slate-700 rounded-xl p-6">
                         <div class="text-sm text-slate-400 mb-2">With LeadsHook</div>
                         <div class="text-5xl font-bold text-emerald-400 mb-2">75%+</div>
                         <div class="text-sm text-slate-500">Qualified, verified leads convert</div>
                     </div>
-                    <div class="text-center bg-slate-700 rounded-xl p-4">
+                    <div class="text-center bg-slate-700 rounded-xl p-6">
                         <div class="text-sm text-slate-400 mb-2">Time Saved</div>
-                        <div class="text-5xl font-bold text-amber-400 mb-2">10+ hrs/wk</div>
+                        <div class="text-3xl md:text-4xl font-bold text-amber-400 mb-2 whitespace-nowrap">10+ hrs/wk</div>
                         <div class="text-sm text-slate-500">No more unqualified calls</div>
                     </div>
                 </div>
 
-                <h3 class="text-xl font-semibold mb-6 text-center">What You're Doing Now vs LeadsHook</h3>
+                <h3 class="text-xl font-semibold mb-6 text-center">What You're Probably Doing Now vs LeadsHook</h3>
                 <div class="grid md:grid-cols-2 gap-6 mb-8">
                     <div class="bg-red-900/30 border border-red-700 rounded-xl p-6">
                         <div class="text-red-400 font-semibold mb-4">&#10060; Current Approach</div>
@@ -1749,8 +1731,8 @@
                 </div>
 
                 <div class="bg-gradient-to-r from-amber-500 to-yellow-400 text-slate-900 rounded-xl p-6 text-center">
-                    <div class="text-2xl font-bold mb-2">One six-figure client pays for LeadsHook for 8+ years</div>
-                    <div class="text-slate-700">LeadsHook costs $100/month. One extra signed client from better qualification = $5,000-$15,000 in fees.</div>
+                    <div class="text-2xl font-bold mb-2">What's a 20% Lower Cost Per Lead Worth to You?</div>
+                    <div class="text-slate-700">On a $1,000/month ad budget, that's $200 back in your pocket. On $10,000/month? That's $2,000—every single month—to reinvest or take home.</div>
                 </div>
             </div>
         </div>
@@ -1760,8 +1742,8 @@
     <section class="py-20">
         <div class="max-w-5xl mx-auto px-10">
             <div class="text-center mb-12">
-                <h2 class="text-3xl font-semibold mb-4 text-slate-900">Built for DVA Claims Advocates</h2>
-                <p class="text-lg text-slate-500 max-w-2xl mx-auto">LeadsHook handles the entire veteran lead journey—from ad click to consultation booking.</p>
+                <h2 class="text-3xl font-semibold mb-4 text-slate-900">This is what the advocates signing 20 veterans a month are using.</h2>
+                <p class="text-lg text-slate-500 max-w-2xl mx-auto">Everything the system does—from ad click to consultation.</p>
             </div>
 
             <div class="grid md:grid-cols-3 gap-6">
@@ -1837,24 +1819,24 @@
 
     <!-- CTA -->
     <section class="gradient-hero py-20 px-10 text-center text-white">
-        <h2 class="text-3xl font-semibold mb-5">Ready to Get Qualified Veteran Leads?</h2>
-        <p class="text-lg opacity-90 max-w-2xl mx-auto mb-8">Stop wasting time on unqualified consultations. Build a funnel that delivers veterans who are verified, qualified, and ready to claim.</p>
+        <h2 class="text-3xl font-semibold mb-5">You've seen what they're doing. Now it's your turn.</h2>
+        <p class="text-lg opacity-90 max-w-2xl mx-auto mb-8">Same system. Same results. Veterans who are verified, qualified, and ready to claim—before you pick up the phone.</p>
         <div class="flex flex-wrap justify-center gap-8 mb-8">
             <div class="text-center">
-                <div class="text-3xl font-bold text-amber-400">$100/mo</div>
-                <div class="text-sm opacity-80">100,000 impressions included</div>
+                <div class="text-3xl font-bold text-amber-400">100%</div>
+                <div class="text-sm opacity-80">Verified, reachable leads</div>
             </div>
             <div class="text-center">
                 <div class="text-3xl font-bold text-amber-400">2-3x</div>
                 <div class="text-sm opacity-80">More signed clients from same spend</div>
             </div>
             <div class="text-center">
-                <div class="text-3xl font-bold text-amber-400">All Features</div>
-                <div class="text-sm opacity-80">No tiers, no upsells</div>
+                <div class="text-3xl font-bold text-amber-400">10+ hrs</div>
+                <div class="text-sm opacity-80">Saved weekly on unqualified calls</div>
             </div>
         </div>
         <a href="#" class="inline-block gradient-cta-btn text-slate-900 px-12 py-4 rounded-full font-semibold text-lg hover:scale-105 transition-transform">See How LeadsHook Works</a>
-        <p class="mt-5 text-sm opacity-80">Join advocacy businesses generating qualified, verified veteran leads</p>
+        <p class="mt-5 text-sm opacity-80">The advocates who found the exit aren't telling anyone. Now you know.</p>
     </section>
 
     <footer class="text-center py-10 text-slate-500 text-sm border-t border-slate-200">
