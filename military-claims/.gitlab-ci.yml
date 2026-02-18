@@ -1,0 +1,12 @@
+pages:
+  image: alpine:latest
+  stage: deploy
+  script:
+    - mkdir -p public
+    - cp *.html public/
+    - cp readme.md public/ 2>/dev/null || true
+  artifacts:
+    paths:
+      - public
+  only:
+    - main
