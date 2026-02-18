@@ -3,8 +3,7 @@ pages:
   stage: deploy
   script:
     - mkdir -p public
-    - cp *.html public/
-    - cp readme.md public/ 2>/dev/null || true
+    - cp military-claims/*.html public/
   artifacts:
     paths:
       - public
