@@ -93,6 +93,7 @@
         <h1 class="text-2xl font-bold text-navy-800">LeadsHook User Flow</h1>
         <p class="text-navy-400 text-sm mt-1">
             <span class="text-accent-500 font-medium">Homepage</span> →
+            <span class="text-accent-500 font-medium">Chat Qualification</span> →
             <span class="text-accent-500 font-medium">Niche Page</span> →
             <span class="text-accent-500 font-medium">Signup</span> →
             <span class="text-accent-500 font-medium">Onboarding</span> →
@@ -119,21 +120,21 @@
                         <div class="space-y-3 text-sm">
                             <div>
                                 <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Headline</div>
-                                <div class="font-medium text-navy-700">"Build Customer Journeys"</div>
+                                <div class="font-medium text-navy-700">"Escape the Stack"</div>
                             </div>
                             <div>
                                 <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Subheadline</div>
-                                <div class="text-navy-500">"Chat with AI to generate leads"</div>
+                                <div class="text-navy-500">"Generate leads by chatting with AI"</div>
                             </div>
                             <div>
                                 <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Prompt Box</div>
                                 <div class="bg-navy-50 border border-navy-100 rounded-lg p-3">
-                                    <div class="text-navy-300 italic">"Build a journey in the solar / life insurance / debt relief niche"</div>
+                                    <div class="text-navy-300 italic">"Type your niche"</div>
                                 </div>
                             </div>
                             <div>
                                 <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">User Action</div>
-                                <div class="text-navy-500">User types a niche and hits enter</div>
+                                <div class="text-navy-500">User types their niche and hits enter</div>
                             </div>
                         </div>
                     </div>
@@ -149,7 +150,7 @@
                                 <div class="text-white text-lg font-bold mb-1">Build Customer Journeys</div>
                                 <div class="text-navy-300 text-xs mb-4">Chat with AI to generate leads</div>
                                 <div class="bg-white rounded-lg p-3 flex items-center gap-2 max-w-xs mx-auto">
-                                    <span class="text-navy-300 text-xs flex-1 text-left">Build a journey in the solar...</span>
+                                    <span class="text-navy-300 text-xs flex-1 text-left">Type your niche...</span>
                                     <span class="bg-navy-700 text-white text-xs px-2 py-1 rounded">→</span>
                                 </div>
                             </div>
@@ -159,7 +160,7 @@
                 <div class="mt-4 pt-4 border-t border-navy-100">
                     <div class="flex items-center gap-2 text-sm">
                         <span class="text-navy-400">Output:</span>
-                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Redirects to /niche/[niche-slug]</span>
+                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Redirects to /chat/[niche-slug]</span>
                     </div>
                 </div>
             </div>
@@ -170,12 +171,145 @@
             <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
-        <!-- STEP 1: Niche Page -->
+        <!-- STEP 1: Chat Qualification -->
+        <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden">
+            <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
+                <div class="flex items-center gap-3">
+                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 1</span>
+                    <span class="font-medium text-lg">Chat Qualification</span>
+                </div>
+                <span class="text-xs text-accent-400">leadshook.com/chat/[niche-slug]</span>
+            </div>
+            <div class="p-6">
+                <div class="grid md:grid-cols-2 gap-6">
+                    <div>
+                        <h3 class="font-bold text-navy-800 mb-3">Commander Chat Interface</h3>
+                        <p class="text-sm text-navy-500 mb-4">AI-driven conversation that qualifies the prospect and gathers business context before signup.</p>
+                        <div class="space-y-3 text-sm">
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Page Title</div>
+                                <div class="font-medium text-navy-700">"Escape the Stack: [Niche Name]"</div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Commander Actions</div>
+                                <div class="space-y-1.5">
+                                    <div class="flex items-center gap-2 text-navy-500">
+                                        <span class="text-emerald-500 text-xs">✓</span>
+                                        <span class="font-medium text-xs bg-navy-100 px-2 py-0.5 rounded">Search</span>
+                                        <span class="text-xs">Market analysis for the niche</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-navy-500">
+                                        <span class="text-emerald-500 text-xs">✓</span>
+                                        <span class="font-medium text-xs bg-navy-100 px-2 py-0.5 rounded">Analyze</span>
+                                        <span class="text-xs">Demographics & eligibility patterns</span>
+                                    </div>
+                                    <div class="flex items-center gap-2 text-navy-500">
+                                        <span class="text-emerald-500 text-xs">✓</span>
+                                        <span class="font-medium text-xs bg-navy-100 px-2 py-0.5 rounded">Research</span>
+                                        <span class="text-xs">Intake qualification needs</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="text-xs text-navy-400 uppercase tracking-wider mb-1">Qualifying Questions</div>
+                                <ol class="text-xs text-navy-500 space-y-1 list-decimal ml-4">
+                                    <li><strong>Where do you operate?</strong> States, demographics</li>
+                                    <li><strong>How are you generating leads now?</strong> Channels, spend</li>
+                                    <li><strong>Consultation volume?</strong> Bookings vs signed clients</li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <!-- Chat mockup -->
+                        <div class="bg-navy-800 rounded-lg overflow-hidden">
+                            <div class="bg-navy-700 px-3 py-2 flex items-center justify-between">
+                                <div class="flex items-center gap-2">
+                                    <span class="text-xs text-navy-400">← Back to Home</span>
+                                </div>
+                                <span class="text-xs text-navy-400">/chat/veteran-advocacy</span>
+                            </div>
+                            <div class="p-4 space-y-3">
+                                <div class="text-white text-sm font-bold text-center mb-3">Escape the Stack: Veterans DVA Claims</div>
+
+                                <!-- User message -->
+                                <div class="flex justify-end">
+                                    <div class="bg-navy-600 rounded-lg p-2.5 max-w-[75%]">
+                                        <div class="text-navy-300 text-[10px] mb-1 flex items-center gap-1">
+                                            <span>👤</span> You
+                                        </div>
+                                        <div class="text-white text-xs">DVA advocacy claims</div>
+                                    </div>
+                                </div>
+
+                                <!-- Commander message -->
+                                <div class="flex justify-start">
+                                    <div class="bg-navy-700 border border-navy-600 rounded-lg p-2.5 max-w-[85%]">
+                                        <div class="text-accent-500 text-[10px] mb-1.5 flex items-center gap-1 font-medium">
+                                            <span>✦</span> Commander
+                                        </div>
+                                        <!-- Research steps -->
+                                        <div class="bg-navy-800 rounded p-2 mb-2 space-y-1">
+                                            <div class="flex items-center gap-1.5 text-[10px]">
+                                                <span class="text-emerald-400">✓</span>
+                                                <span class="text-navy-300 font-medium">Search</span>
+                                                <span class="text-navy-500">DVA claims market analysis</span>
+                                            </div>
+                                            <div class="flex items-center gap-1.5 text-[10px]">
+                                                <span class="text-emerald-400">✓</span>
+                                                <span class="text-navy-300 font-medium">Analyze</span>
+                                                <span class="text-navy-500">Veteran demographics</span>
+                                            </div>
+                                            <div class="flex items-center gap-1.5 text-[10px]">
+                                                <span class="text-emerald-400">✓</span>
+                                                <span class="text-navy-300 font-medium">Research</span>
+                                                <span class="text-navy-500">Intake qualification needs</span>
+                                            </div>
+                                        </div>
+                                        <div class="text-navy-200 text-[10px] mb-1.5">DVA claims advocacy — great niche. High entitlement values, long client lifetime...</div>
+                                        <div class="text-white text-[10px] space-y-1">
+                                            <div>1. <strong>Where do you operate?</strong></div>
+                                            <div>2. <strong>How are you generating leads?</strong></div>
+                                            <div>3. <strong>Consultation volume?</strong></div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <!-- User reply -->
+                                <div class="flex justify-end">
+                                    <div class="bg-navy-600 rounded-lg p-2.5 max-w-[75%]">
+                                        <div class="text-navy-300 text-[10px] mb-1 flex items-center gap-1">
+                                            <span>👤</span> You
+                                        </div>
+                                        <div class="text-white text-[10px]">Queensland, mostly ex-Army and Navy, aged 35-60. Facebook ads, $3k/mo. 15 consults, signing 6...</div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-4 pt-4 border-t border-navy-100">
+                    <div class="flex items-center gap-2 text-sm flex-wrap">
+                        <span class="text-navy-400">Output:</span>
+                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Qualified prospect data</span>
+                        <span class="text-navy-300">→</span>
+                        <span class="bg-navy-100 text-navy-600 px-2 py-0.5 rounded text-xs font-medium">Passed to Niche Page / Signup</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Arrow -->
+        <div class="flex justify-center">
+            <div class="text-accent-400 text-2xl font-bold">↓</div>
+        </div>
+
+        <!-- STEP 2: Niche Page -->
         <div class="flex gap-4">
             <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden flex-1">
                 <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 1</span>
+                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 2</span>
                         <span class="font-medium text-lg">Niche Page</span>
                     </div>
                     <span class="text-xs text-accent-400">leadshook.com/niche/[slug]</span>
@@ -298,7 +432,7 @@
                                         <div class="text-navy-400 text-xs">Meet Steve, rejected twice...</div>
                                     </div>
                                     <div class="bg-white text-navy-700 text-xs text-center py-1.5 rounded font-medium">
-                                        Sign Up to Build This →
+                                        Sign Up to Get the System →
                                     </div>
                                 </div>
                             </div>
@@ -319,7 +453,7 @@
             <div class="w-48 flex-shrink-0">
                 <div class="bg-gradient-to-br from-accent-500 to-accent-600 rounded-xl p-4 sticky top-6">
                     <div class="text-xs text-amber-100 uppercase tracking-wider mb-3">Example Output</div>
-                    <a href="Military_Claims_Landing_Page_Tailwind.html" target="_blank" class="block bg-white/20 hover:bg-white/30 rounded-lg p-3 transition-colors">
+                    <a href="https://leadshookcom.pages.dev/journeys/veterans" target="_blank" class="block bg-white/20 hover:bg-white/30 rounded-lg p-3 transition-colors">
                         <div class="text-navy-900 text-sm font-medium mb-1">Military Claims</div>
                         <div class="text-navy-700 text-xs">Landing Page</div>
                         <div class="mt-2 text-navy-900 text-xs flex items-center gap-1 font-medium">
@@ -335,11 +469,11 @@
             <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
-        <!-- STEP 2: Onboarding -->
+        <!-- STEP 3: Onboarding -->
         <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden">
             <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 2</span>
+                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 3</span>
                     <span class="font-medium text-lg">Onboarding Flow</span>
                 </div>
                 <span class="text-xs text-accent-400">Post-signup — Creates Customer Magnet</span>
@@ -557,12 +691,12 @@
             <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
-        <!-- STEP 3: Segments -->
+        <!-- STEP 4: Segments -->
         <div class="flex gap-4">
             <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden flex-1">
                 <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 3</span>
+                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 4</span>
                         <span class="font-medium text-lg">Segments List</span>
                     </div>
                     <span class="text-xs text-accent-400">Auto-generated from Customer Magnet</span>
@@ -640,12 +774,12 @@
             <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
-        <!-- STEP 4: Segment Profile -->
+        <!-- STEP 5: Segment Profile -->
         <div class="flex gap-4">
             <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden flex-1">
                 <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                     <div class="flex items-center gap-3">
-                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 4</span>
+                        <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 5</span>
                         <span class="font-medium text-lg">Segment Profile + Journey</span>
                     </div>
                     <span class="text-xs text-accent-400">Generated for selected segment</span>
@@ -709,11 +843,11 @@
             <div class="text-accent-400 text-2xl font-bold">↓</div>
         </div>
 
-        <!-- STEP 5: Decision Tree Builder -->
+        <!-- STEP 6: Decision Tree Builder -->
         <div class="flow-card bg-white rounded-xl border-l-4 border-l-accent-500 border border-navy-100 overflow-hidden">
             <div class="bg-gradient-to-r from-navy-700 to-navy-600 text-white px-4 py-2 flex items-center justify-between">
                 <div class="flex items-center gap-3">
-                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 5</span>
+                    <span class="bg-accent-500 text-navy-900 text-sm font-bold px-3 py-1 rounded-md shadow-sm">STEP 6</span>
                     <span class="font-medium text-lg">Decision Tree Builder</span>
                 </div>
                 <span class="text-xs text-accent-400">Questions pre-loaded from profile</span>
@@ -772,6 +906,8 @@
             <div class="text-xs text-navy-300 uppercase tracking-wider mb-4">Flow Summary</div>
             <div class="flex flex-wrap items-center gap-2 text-sm">
                 <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Homepage</span>
+                <span class="text-accent-400">→</span>
+                <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Chat Qualification</span>
                 <span class="text-accent-400">→</span>
                 <span class="bg-accent-500 text-navy-900 px-3 py-1 rounded font-medium">Niche Page</span>
                 <span class="text-accent-400">→</span>
